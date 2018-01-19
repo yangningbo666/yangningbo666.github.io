@@ -9,7 +9,7 @@ description: A coder who want to be a programmer.
 author: Ningbo Yang
 language: zh-Hans
 timezone: Asia/Shanghai
-
+keywords: ros, ubuntu, TensorFlow, gazebo, rviz, robot, reinforcement learning
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
@@ -26,6 +26,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - README.md
+  - baidu_verify_IIJFGFbbEX.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -87,3 +89,6 @@ deploy:
 duoshuo:
   enable: true
   shortname: your-duoshuo-shortname
+
+sitemap:
+path: sitemap.xml
