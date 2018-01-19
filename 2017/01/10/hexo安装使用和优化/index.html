@@ -25,6 +25,8 @@
 
 
 
+  <meta name="google-site-verification" content="google005f20e2891088fe.html" />
+
 
 
 
@@ -87,7 +89,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="使用Hexo在GitHub上搭建个人博客">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T08:54:00.879Z">
+<meta property="og:updated_time" content="2018-01-19T16:41:05.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo安装使用和优化">
 <meta name="twitter:description" content="使用Hexo在GitHub上搭建个人博客">
@@ -131,6 +133,15 @@
 
 
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-112755196-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 
@@ -488,12 +499,19 @@ hexo g
 hexo d
 </code></pre><hr>
 <p>优化</p>
-<h1 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h1><pre><code>npm install hexo-deployer-git --save
-</code></pre><h1 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h1><p>支持很多种迁移方式，我采用的是RSS的，其他可以看官网<br><a href="https://hexo.io/zh-cn/docs/migration.html" target="_blank" rel="noopener">hexo迁移官网</a></p>
+<h1 id="1-git安装"><a href="#1-git安装" class="headerlink" title="1.git安装"></a>1.git安装</h1><pre><code>npm install hexo-deployer-git --save
+</code></pre><h1 id="2-迁移"><a href="#2-迁移" class="headerlink" title="2.迁移"></a>2.迁移</h1><p>支持很多种迁移方式，我采用的是RSS的，其他可以看官网<br><a href="https://hexo.io/zh-cn/docs/migration.html" target="_blank" rel="noopener">hexo迁移官网</a></p>
 <pre><code>npm install hexo-migrator-rss --save
 hexo migrate rss &lt;source&gt;
-</code></pre><h1 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h1><pre><code>npm install https://github.com/CodeFalling/hexo-asset-image --save
+</code></pre><h1 id="3-图片插入"><a href="#3-图片插入" class="headerlink" title="3.图片插入"></a>3.图片插入</h1><pre><code>npm install https://github.com/CodeFalling/hexo-asset-image --save
 </code></pre><p>然后把图片放入对应文章的配套文件夹下，比如1.png</p>
+<h1 id="4-Google收录"><a href="#4-Google收录" class="headerlink" title="4.Google收录"></a>4.Google收录</h1><pre><code>npm install hexo-generator-sitemap --save
+[Google站长收录网站](https://www.google.com/webmasters/tools/home?hl=zh-CN)
+</code></pre><h1 id="5-文章访问量统计"><a href="#5-文章访问量统计" class="headerlink" title="5.文章访问量统计"></a>5.文章访问量统计</h1><p>使用LeanCloud，评论也可以使用它，省心。<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">参考博客</a></p>
+<h1 id="6-local-research"><a href="#6-local-research" class="headerlink" title="6.local research"></a>6.local research</h1><p>本地搜索很好用。在主题配置文件中修改local research就好</p>
+<h1 id="7-RSS"><a href="#7-RSS" class="headerlink" title="7.RSS"></a>7.RSS</h1><p>使用 Hexo 生成的 Feed 链接。 你可以需要先安装 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> 插件。</p>
+<hr>
+<p>next官网 <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a></p>
 
       
     </div>
@@ -506,7 +524,7 @@ hexo migrate rss &lt;source&gt;
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>Donate comment here</div>
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>打赏</span>
   </button>
@@ -755,7 +773,7 @@ hexo migrate rss &lt;source&gt;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-git"><span class="nav-number">1.1.</span> <span class="nav-text">1.git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">2.Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-hexo"><span class="nav-number">1.3.</span> <span class="nav-text">3.hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub配置"><span class="nav-number">2.</span> <span class="nav-text">GitHub配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-仓库"><span class="nav-number">2.1.</span> <span class="nav-text">1.仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置SSH"><span class="nav-number">2.2.</span> <span class="nav-text">2.配置SSH</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置hexo"><span class="nav-number">3.</span> <span class="nav-text">配置hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置hexo目录下的-config-yml文件"><span class="nav-number">3.1.</span> <span class="nav-text">1.配置hexo目录下的_config.yml文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-测试"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git安装"><span class="nav-number">4.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#迁移"><span class="nav-number">5.</span> <span class="nav-text">迁移</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片插入"><span class="nav-number">6.</span> <span class="nav-text">图片插入</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-git"><span class="nav-number">1.1.</span> <span class="nav-text">1.git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">2.Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-hexo"><span class="nav-number">1.3.</span> <span class="nav-text">3.hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub配置"><span class="nav-number">2.</span> <span class="nav-text">GitHub配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-仓库"><span class="nav-number">2.1.</span> <span class="nav-text">1.仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置SSH"><span class="nav-number">2.2.</span> <span class="nav-text">2.配置SSH</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置hexo"><span class="nav-number">3.</span> <span class="nav-text">配置hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置hexo目录下的-config-yml文件"><span class="nav-number">3.1.</span> <span class="nav-text">1.配置hexo目录下的_config.yml文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-测试"><span class="nav-number">3.2.</span> <span class="nav-text">2.测试</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-git安装"><span class="nav-number">4.</span> <span class="nav-text">1.git安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-迁移"><span class="nav-number">5.</span> <span class="nav-text">2.迁移</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-图片插入"><span class="nav-number">6.</span> <span class="nav-text">3.图片插入</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-Google收录"><span class="nav-number">7.</span> <span class="nav-text">4.Google收录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-文章访问量统计"><span class="nav-number">8.</span> <span class="nav-text">5.文章访问量统计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-local-research"><span class="nav-number">9.</span> <span class="nav-text">6.local research</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-RSS"><span class="nav-number">10.</span> <span class="nav-text">7.RSS</span></a></li></ol></div>
             
 
           </div>
