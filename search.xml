@@ -172,6 +172,8 @@ pip install -e &#39;.[all]&#39;</code><br>在他的安装说明提到了Renderin
         
         <tags>
             
+            <tag> ubuntu </tag>
+            
             <tag> ros </tag>
             
             <tag> gazebo </tag>
@@ -181,8 +183,6 @@ pip install -e &#39;.[all]&#39;</code><br>在他的安装说明提到了Renderin
             <tag> python </tag>
             
             <tag> Tensorflow </tag>
-            
-            <tag> ubuntu </tag>
             
         </tags>
         
@@ -258,6 +258,8 @@ pip install -e &#39;.[all]&#39;</code><br>在他的安装说明提到了Renderin
         
         <tags>
             
+            <tag> ubuntu </tag>
+            
             <tag> ros </tag>
             
             <tag> gazebo </tag>
@@ -267,8 +269,6 @@ pip install -e &#39;.[all]&#39;</code><br>在他的安装说明提到了Renderin
             <tag> python </tag>
             
             <tag> Tensorflow </tag>
-            
-            <tag> ubuntu </tag>
             
         </tags>
         
@@ -344,11 +344,11 @@ StartupNotify=false
         
         <tags>
             
-            <tag> ubuntu </tag>
-            
             <tag> launchpad </tag>
             
             <tag> 图标异常 </tag>
+            
+            <tag> ubuntu </tag>
             
         </tags>
         
@@ -489,9 +489,9 @@ map --&gt; odom --&gt; base_link
         
         <tags>
             
-            <tag> Tensorflow </tag>
-            
             <tag> ubuntu </tag>
+            
+            <tag> Tensorflow </tag>
             
             <tag> CUDA </tag>
             

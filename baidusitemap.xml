@@ -205,6 +205,8 @@
         <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
         <pubTime>2018-01-10T15:15:48.000Z</pubTime>
         
+        <tag>ubuntu</tag>
+         
         <tag>ros</tag>
          
         <tag>gazebo</tag>
@@ -214,8 +216,6 @@
         <tag>python</tag>
          
         <tag>Tensorflow</tag>
-         
-        <tag>ubuntu</tag>
          
          
            
@@ -235,11 +235,11 @@
         <title>launchpad中图标显示异常</title>
         <pubTime>2017-12-28T02:08:16.000Z</pubTime>
         
-        <tag>ubuntu</tag>
-         
         <tag>launchpad</tag>
          
         <tag>图标异常</tag>
+         
+        <tag>ubuntu</tag>
          
          
            
@@ -309,6 +309,8 @@
         <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
         <pubTime>2018-01-10T13:58:21.000Z</pubTime>
         
+        <tag>ubuntu</tag>
+         
         <tag>ros</tag>
          
         <tag>gazebo</tag>
@@ -318,8 +320,6 @@
         <tag>python</tag>
          
         <tag>Tensorflow</tag>
-         
-        <tag>ubuntu</tag>
          
          
            
@@ -464,9 +464,9 @@
         <title>笔记本(GT 750M)Ubuntu14.04安装[CUDA8.0][cuDDN5.1][Tensorflow]</title>
         <pubTime>2017-12-22T02:39:02.000Z</pubTime>
         
-        <tag>Tensorflow</tag>
-         
         <tag>ubuntu</tag>
+         
+        <tag>Tensorflow</tag>
          
         <tag>CUDA</tag>
          
