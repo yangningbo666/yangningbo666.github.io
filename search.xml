@@ -524,9 +524,9 @@ map --&gt; odom --&gt; base_link
         
         <tags>
             
-            <tag> ROS </tag>
-            
             <tag> rviz </tag>
+            
+            <tag> ROS </tag>
             
             <tag> robot </tag>
             
@@ -828,11 +828,11 @@ etime(clock,t);
         
         <tags>
             
-            <tag> ROS </tag>
-            
             <tag> 横向移动 </tag>
             
             <tag> 机器人 </tag>
+            
+            <tag> ROS </tag>
             
             <tag> youbot </tag>
             
@@ -874,11 +874,11 @@ etime(clock,t);
         
         <tags>
             
-            <tag> ROS </tag>
-            
             <tag> 横向移动 </tag>
             
             <tag> 机器人 </tag>
+            
+            <tag> ROS </tag>
             
         </tags>
         
@@ -1300,11 +1300,11 @@ etime(clock,t);
         
         <tags>
             
-            <tag> ROS </tag>
-            
             <tag> 横向移动 </tag>
             
             <tag> 机器人 </tag>
+            
+            <tag> ROS </tag>
             
         </tags>
         
