@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yangningbocn.github.io/about/index.html</loc>
+    
+    <lastmod>2018-01-19T17:07:33.582Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yangningbocn.github.io/2017/01/10/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96/</loc>
     
     <lastmod>2018-01-19T16:41:05.289Z</lastmod>
@@ -103,13 +110,6 @@
     <loc>https://yangningbocn.github.io/2017/10/17/%E5%8E%9F-%E5%85%B3%E4%BA%8E%E7%91%9E%E5%85%B8%E8%BD%AE%E6%9C%BA%E5%99%A8%E4%BA%BA%E2%80%94%E2%80%94youbot%E7%9A%84%E8%AE%A8%E8%AE%BA/</loc>
     
     <lastmod>2018-01-19T15:43:21.745Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yangningbocn.github.io/about/index.html</loc>
-    
-    <lastmod>2018-01-19T15:42:57.231Z</lastmod>
     
   </url>
   
