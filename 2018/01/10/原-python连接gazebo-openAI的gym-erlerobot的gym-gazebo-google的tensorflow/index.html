@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T08:00:47.371Z">
+<meta property="og:updated_time" content="2018-01-19T15:57:47.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python连接gazebo&#x2F;openAI的gym&#x2F;erlerobot的gym-gazebo&#x2F;google的tensorflow">
 <meta name="twitter:description" content="python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow">
@@ -242,7 +242,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
             
@@ -322,7 +322,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ningbo Yang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -409,6 +409,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
             <div class="post-wordcount">
@@ -450,66 +455,23 @@
       
 
       
-        <p>笔记本型号：联想Y500  </p>
-<p>CPU　:　Intel® Core™ i7-3630QM CPU @ 2.40GHz × 8  </p>
-<p>内存：7.7 GiB  </p>
-<p>显卡：GeForce GT 750M/PCIe/SSE2  </p>
-<p>系统版本：ubuntu 14.04 LTS 64bit </p>
-<p>ROS版本：indigo </p>
-<p>gazebo版本：gazebo7 </p>
-<p>tensorflow：1.4.1-gpu </p>
-<p>python：2.7</p>
+        <p>笔记本型号：联想Y500<br>CPU　:　Intel® Core™ i7-3630QM CPU @ 2.40GHz × 8<br>内存：7.7 GiB<br>显卡：GeForce GT 750M/PCIe/SSE2<br>系统版本：ubuntu 14.04 LTS 64bit<br>ROS版本：indigo<br>gazebo版本：gazebo7<br>tensorflow：1.4.1-gpu<br>python：2.7</p>
 <hr>
-<p>中间一些令我吐血的地方： </p>
-<p>1.必须python2.7，不然要解决的问题太多了，我尝试了好久，边擦干净屏幕上的血，边把所有的东西改为了python2.7 </p>
-<p>2.百度不是解决问题的方法，谷歌才是，科学上网才是第一生产力 </p>
-<p>3.遇到无法import rospy等ros的包的问题，请移步我的另一篇博客。 </p>
-<p><a href="http://blog.csdn.net/ynb19930428/article/details/79028807" target="_blank" rel="noopener">在sublime text3和pycharm无法import rospy等ros Python库</a> </p>
-<p>4.中间用到的一些工具，请移步我的另一篇博客 </p>
-<p><a href="ubuntu%E4%B8%8A%E6%88%91%E7%9A%84%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87%E5%B0%8F%E5%B7%A5%E5%85%B7">ubuntu上我的装机必备小工具</a></p>
+<p>中间一些令我吐血的地方：<br>1.必须python2.7，不然要解决的问题太多了，我尝试了好久，边擦干净屏幕上的血，边把所有的东西改为了python2.7<br>2.百度不是解决问题的方法，谷歌才是，科学上网才是第一生产力<br>3.遇到无法import rospy等ros的包的问题，请移步我的另一篇博客。<br><a href="http://blog.csdn.net/ynb19930428/article/details/79028807" target="_blank" rel="noopener">在sublime text3和pycharm无法import rospy等ros Python库</a><br>4.中间用到的一些工具，请移步我的另一篇博客<br><a href="ubuntu%E4%B8%8A%E6%88%91%E7%9A%84%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87%E5%B0%8F%E5%B7%A5%E5%85%B7">ubuntu上我的装机必备小工具</a></p>
 <hr>
-<h1 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h1><h2 id="1-先安装gazebo7"><a href="#1-先安装gazebo7" class="headerlink" title="1.先安装gazebo7"></a>1.先安装gazebo7</h2><p>我用的是新立得软件包管理装的，很方便，当然你可以选择别的方式</p>
-<h2 id="2-安装ros"><a href="#2-安装ros" class="headerlink" title="2.安装ros"></a>2.安装ros</h2><p>请移步ROSwiki </p>
-<p><a href="http://wiki.ros.org/cn/indigo/Installation/Ubuntu" target="_blank" rel="noopener">roswiki</a> </p>
-<p>注意：这里必须安装ros-indigo-desktop版本 不要装full</p>
-<h2 id="3-安装gazebo7和ros的control-package"><a href="#3-安装gazebo7和ros的control-package" class="headerlink" title="3.安装gazebo7和ros的control package"></a>3.安装gazebo7和ros的control package</h2><p>在新立得软件包管理一搜就有了，关键词为：ros-indigo-gazebo7-ros  </p>
-<p>把其中的都装了就好了</p>
-<h2 id="4-安装gym"><a href="#4-安装gym" class="headerlink" title="4.安装gym"></a>4.安装gym</h2><p><a href="https://github.com/openai/gym" target="_blank" rel="noopener">openAI-gym的github</a> </p>
-<p>按照github中的步骤来就好 </p>
-<p>首先装依赖</p>
-<pre><code>apt&lt;span class=&quot;hljs-attribute&quot;&gt;-get&lt;/span&gt; install &lt;span class=&quot;hljs-attribute&quot;&gt;-y&lt;/span&gt; python&lt;span class=&quot;hljs-attribute&quot;&gt;-numpy&lt;/span&gt; python&lt;span class=&quot;hljs-attribute&quot;&gt;-dev&lt;/span&gt; cmake zlib1g&lt;span class=&quot;hljs-attribute&quot;&gt;-dev&lt;/span&gt; libjpeg&lt;span class=&quot;hljs-attribute&quot;&gt;-dev&lt;/span&gt; xvfb libav&lt;span class=&quot;hljs-attribute&quot;&gt;-tools&lt;/span&gt; xorg&lt;span class=&quot;hljs-attribute&quot;&gt;-dev&lt;/span&gt; python&lt;span class=&quot;hljs-attribute&quot;&gt;-opengl&lt;/span&gt; libboost&lt;span class=&quot;hljs-attribute&quot;&gt;-all&lt;/span&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;-dev&lt;/span&gt; libsdl2&lt;span class=&quot;hljs-attribute&quot;&gt;-dev&lt;/span&gt; swig`&lt;/pre&gt;
+<p>#安装步骤</p>
+<p>##1.先安装gazebo7<br>我用的是新立得软件包管理装的，很方便，当然你可以选择别的方式</p>
+<p>##2.安装ros<br>请移步ROSwiki<br><a href="http://wiki.ros.org/cn/indigo/Installation/Ubuntu" target="_blank" rel="noopener">roswiki</a><br>注意：这里必须安装ros-indigo-desktop版本 不要装full</p>
+<p>##3.安装gazebo7和ros的control package<br>在新立得软件包管理一搜就有了，关键词为：ros-indigo-gazebo7-ros<br>把其中的都装了就好了</p>
+<p>##4.安装gym<br><a href="https://github.com/openai/gym" target="_blank" rel="noopener">openAI-gym的github</a><br>按照github中的步骤来就好<br>首先装依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig</span><br></pre></td></tr></table></figure>
+<p>注意git clone之后要装all版本<br><code>git clone https://github.com/openai/gym.git
+cd gym
+pip install -e &#39;.[all]&#39;</code><br>在他的安装说明提到了Rendering on a server，这个是我之前一直在找的东西。可以在你不查屏幕的时候运行gazebo和rviz，这在我之前的博文中提到了<br>Rendering on a server<br>If you’re trying to render video on a server, you’ll need to connect a fake display. The easiest way to do this is by running under xvfb-run (on Ubuntu, install the xvfb package):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xvfb-run -s &quot;-screen 0 1400x900x24&quot; bash</span><br></pre></td></tr></table></figure>
+<p>##5.gym-gazebo<br>这个很难装，很繁琐，现在我还是比较懵逼的。不过我总结了一下经。<br>先去看一下他的安装文档，然后不要着急。我们之前的有些已经装过了，那我们采用step-by-step的方式，安装过程中要看着setup.bash来，把不用的步骤省去<br>参照此人的博客：<a href="http://blog.csdn.net/zhangdadadawei/article/details/78956156" target="_blank" rel="noopener">理解gym-gazebo</a><br>注意：<br>    1.安装过程中可以打开gazebo.repos把系统中已经有的可以屏蔽掉。<br>    2.如果CPU性能不是特别好，不建议那么多线程，make -j 1就好，慢点就慢点吧，然后会编译冲突错误。<br>    3.路径的设置要根据自己安装的路径来。</p>
+<p>##6.tensorflow<br>因为ros不兼容python3，所以我只能把原来的Python3的tensorflow废弃掉了。<br>我编译安装tensorflow没成功，这里，我用pip安装的。<br>安装过程中，不知道是网还是我的电脑的问题很多包在pip的时候会下载不下来，导致安装失败，我的应对方法是：从python官网把需要安装的whl包最新版下载下来用pip安装。<br>pip安装whl的方法如下：<br>1.cd到whl包所在的目录<br>2.pip install xxxx.whl（也可以加sudo）</p>
 
-注意git clone之后要装all版本 
-
-`git clone https://github.com/openai/gym.git 
-
-cd gym 
-
-pip install -e &apos;.[all]&apos;` 
-
-在他的安装说明提到了Rendering on a server，这个是我之前一直在找的东西。可以在你不查屏幕的时候运行gazebo和rviz，这在我之前的博文中提到了 
-
-Rendering on a server 
-
-If you’re trying to render video on a server, you’ll need to connect a fake display. The easiest way to do this is by running under xvfb-run (on Ubuntu, install the xvfb package):
-
-&lt;pre class=&quot;prettyprint&quot;&gt;`xvfb&lt;span class=&quot;hljs-attribute&quot;&gt;-run&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;-screen 0 1400x900x24&quot;&lt;/span&gt; bash
-</code></pre><h2 id="5-gym-gazebo"><a href="#5-gym-gazebo" class="headerlink" title="5.gym-gazebo"></a>5.gym-gazebo</h2><p>这个很难装，很繁琐，现在我还是比较懵逼的。不过我总结了一下经。 </p>
-<p>先去看一下他的安装文档，然后不要着急。我们之前的有些已经装过了，那我们采用step-by-step的方式，安装过程中要看着setup.bash来，把不用的步骤省去 </p>
-<p>参照此人的博客：<a href="http://blog.csdn.net/zhangdadadawei/article/details/78956156" target="_blank" rel="noopener">理解gym-gazebo</a> </p>
-<p>注意： </p>
-<pre><code>1.安装过程中可以打开gazebo.repos把系统中已经有的可以屏蔽掉。 
-
-2.如果CPU性能不是特别好，不建议那么多线程，make -j 1就好，慢点就慢点吧，然后会编译冲突错误。 
-
-3.路径的设置要根据自己安装的路径来。
-</code></pre><h2 id="6-tensorflow"><a href="#6-tensorflow" class="headerlink" title="6.tensorflow"></a>6.tensorflow</h2><p>因为ros不兼容python3，所以我只能把原来的Python3的tensorflow废弃掉了。 </p>
-<p>我编译安装tensorflow没成功，这里，我用pip安装的。 </p>
-<p>安装过程中，不知道是网还是我的电脑的问题很多包在pip的时候会下载不下来，导致安装失败，我的应对方法是：从python官网把需要安装的whl包最新版下载下来用pip安装。 </p>
-<p>pip安装whl的方法如下： </p>
-<p>1.cd到whl包所在的目录 </p>
-<p>2.pip install xxxx.whl（也可以加sudo）</p>
-<div>作者：ynb19930428发表于2018/1/10 23:15:48<a href="http://blog.csdn.net/ynb19930428/article/details/79029372" target="_blank" rel="noopener"> 原文链接 </a></div><div> 阅读：21评论：0<a href="http://blog.csdn.net/ynb19930428/article/details/79029372#commentstarget =" target="_blank" rel="noopener">查看评论 </a> </div>
       
     </div>
     
@@ -664,19 +626,14 @@ If you’re trying to render video on a server, you’ll need to connect a fake 
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Ningbo Yang" />
             
               <p class="site-author-name" itemprop="name">Ningbo Yang</p>
               <p class="site-description motion-element" itemprop="description">A coder who want to be a programmer.</p>
@@ -763,22 +720,6 @@ If you’re trying to render video on a server, you’ll need to connect a fake 
       </section>
 
       
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装步骤"><span class="nav-number">1.</span> <span class="nav-text">安装步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-先安装gazebo7"><span class="nav-number">1.1.</span> <span class="nav-text">1.先安装gazebo7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装ros"><span class="nav-number">1.2.</span> <span class="nav-text">2.安装ros</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装gazebo7和ros的control-package"><span class="nav-number">1.3.</span> <span class="nav-text">3.安装gazebo7和ros的control package</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-安装gym"><span class="nav-number">1.4.</span> <span class="nav-text">4.安装gym</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-gym-gazebo"><span class="nav-number">1.5.</span> <span class="nav-text">5.gym-gazebo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-tensorflow"><span class="nav-number">1.6.</span> <span class="nav-text">6.tensorflow</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
 
       
 
@@ -825,16 +766,30 @@ If you’re trying to render video on a server, you’ll need to connect a fake 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
 
 
 
 
 
-
-
-  <div style="display: none;">
-    <script src="//s95.cnzz.com/z_stat.php?id=yangningbocn@gmail.com&web_id=yangningbocn@gmail.com" language="JavaScript"></script>
-  </div>
 
 
 

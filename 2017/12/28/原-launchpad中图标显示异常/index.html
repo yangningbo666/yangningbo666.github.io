@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="在launchpad中图标异常，之后修复图标到正常情况">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T07:14:39.197Z">
+<meta property="og:updated_time" content="2018-01-19T15:56:46.237Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="launchpad中图标显示异常">
 <meta name="twitter:description" content="在launchpad中图标异常，之后修复图标到正常情况">
@@ -242,7 +242,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
             
@@ -322,7 +322,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ningbo Yang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -409,6 +409,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
             <div class="post-wordcount">
@@ -454,24 +459,25 @@
 <p>问题描述:Ubuntu的launchpad(开始菜单)中图标显示错误，不能正常显示图标。</p>
 <p>解决方案：</p>
 <p>打开终端</p>
-<pre name="code" class="plain">cd /usr/share/applications/</pre><pre name="code" class="plain">ls</pre>然后找到你的图标<pre name="code" class="plain">sudo vim *.desktop</pre><span style="white-space:pre">    </span>*为你的app的name
-
-<pre name="code" class="plain">[Desktop Entry]
+<p>cd /usr/share/applications/<br>ls</p>
+<p>然后找到你的图标</p>
+<p>sudo vim *.desktop</p>
+<p>*为你的app的name</p>
+<pre><code>[Desktop Entry]
 Name=Youdao Dict
 Name[zh_CN]=有道词典
 Name[zh_TW]=有道詞典
 Exec=youdao-dict %f
-<u><span style="color:#ff0000;">Icon</span></u>=/usr/share/youdao-dict/app/assets/youdao-dict.png
+Icon=/usr/share/youdao-dict/app/assets/youdao-dict.png
 Terminal=false
 X-MultipleArgs=false
 Type=Application
 Encoding=UTF-8
 Categories=Application;Utility;Dictionary;
-StartupNotify=false</pre>把Icon后面的路径改为你的图片的路径
+StartupNotify=false
+</code></pre><p>把Icon后面的路径改为你的图片的路径</p>
+<p>sudo reboo</p>
 
-<span style="white-space:pre">    </span><pre name="code" class="html">sudo reboot</pre>
-
-<div>作者：ynb19930428发表于2017/12/28 10:08:16<a href="http://blog.csdn.net/ynb19930428/article/details/78918910" target="_blank" rel="noopener"> 原文链接 </a></div><div> 阅读：52评论：0<a href="http://blog.csdn.net/ynb19930428/article/details/78918910#commentstarget =" target="_blank" rel="noopener">查看评论 </a> </div>
       
     </div>
     
@@ -625,6 +631,10 @@ StartupNotify=false</pre>把Icon后面的路径改为你的图片的路径
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Ningbo Yang" />
+            
               <p class="site-author-name" itemprop="name">Ningbo Yang</p>
               <p class="site-description motion-element" itemprop="description">A coder who want to be a programmer.</p>
           </div>
@@ -756,16 +766,30 @@ StartupNotify=false</pre>把Icon后面的路径改为你的图片的路径
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
 
 
 
 
 
-
-
-  <div style="display: none;">
-    <script src="//s95.cnzz.com/z_stat.php?id=yangningbocn@gmail.com&web_id=yangningbocn@gmail.com" language="JavaScript"></script>
-  </div>
 
 
 

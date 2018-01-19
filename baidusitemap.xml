@@ -3,21 +3,43 @@
 
 
     
-    
-    
   <url>
-    <loc>https://yangningbocn.github.io/2017/01/10/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2018-01-19T08:54:00.879Z</lastmod>
+    <loc>https://yangningbocn.github.io/2017/01/10/%E5%9C%A8gazebo%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8/</loc>
+    <lastmod>2018-01-19T16:01:29.230Z</lastmod>
     <data>
         <display>
-        <title>hexo安装使用和优化</title>
+        <title>gazebo中机器人横向移动</title>
         <pubTime>2017-01-10T05:00:00.000Z</pubTime>
         
-        <tag>Hexo</tag>
+        <tag>ROS</tag>
          
-        <tag>Blogs</tag>
+        <tag>横向移动</tag>
          
-        <tag>Github</tag>
+        <tag>机器人</tag>
+         
+         
+           
+             
+              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2018/01/10/%E5%8E%9F-ubuntu%E4%B8%8A%E6%88%91%E7%9A%84%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2018-01-19T16:00:33.667Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu上装机必备小工具</title>
+        <pubTime>2018-01-10T14:12:51.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>tools</tag>
+         
+        <tag>software</tag>
          
          
            
@@ -30,8 +52,184 @@
 
     
   <url>
+    <loc>https://yangningbocn.github.io/2017/12/28/%E5%8E%9F-TensorFlow-in-nvidia-docker-failed-call-to-cuInit-CUDA-ERROR-UNKNOWN/</loc>
+    <lastmod>2018-01-19T15:59:10.752Z</lastmod>
+    <data>
+        <display>
+        <title>TensorFlow in nvidia-docker: failed call to cuInit: CUDA_ERROR_UNKNOWN</title>
+        <pubTime>2017-12-28T12:28:01.000Z</pubTime>
+        
+        <tag>TensorFlow</tag>
+         
+        <tag>nvidia</tag>
+         
+        <tag>CUDA_ERROR_UNKNOWN</tag>
+         
+         
+           
+             
+              <breadCrumb title="reinforcement learning" url="https://yangningbocn.github.io/categories/reinforcement-learning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/12/08/%E5%8E%9F-sublime%E7%9A%84setting-user/</loc>
+    <lastmod>2018-01-19T15:58:38.515Z</lastmod>
+    <data>
+        <display>
+        <title>setting-user of sublime</title>
+        <pubTime>2017-12-08T15:45:05.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>sublime-text3</tag>
+         
+        <tag>setting</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2018/01/16/%E5%8E%9F-ssserver%E5%9C%A8VPS%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E8%87%AA%E5%90%AF%E5%8A%A8/</loc>
+    <lastmod>2018-01-19T15:58:19.186Z</lastmod>
+    <data>
+        <display>
+        <title>ssserver在vps服务器端自启动</title>
+        <pubTime>2018-01-16T11:41:17.000Z</pubTime>
+        
+        <tag>ssserver</tag>
+         
+        <tag>shadowsocks</tag>
+         
+        <tag>nohup</tag>
+         
+        <tag>chacha20</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2018/01/10/%E5%8E%9F-python%E8%BF%9E%E6%8E%A5gazebo-openAI%E7%9A%84gym-erlerobot%E7%9A%84gym-gazebo-google%E7%9A%84tensorflow/</loc>
+    <lastmod>2018-01-19T15:57:47.132Z</lastmod>
+    <data>
+        <display>
+        <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
+        <pubTime>2018-01-10T15:15:48.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>ros</tag>
+         
+        <tag>gazebo</tag>
+         
+        <tag>gym</tag>
+         
+        <tag>python</tag>
+         
+        <tag>Tensorflow</tag>
+         
+         
+           
+             
+              <breadCrumb title="reinforcement learning" url="https://yangningbocn.github.io/categories/reinforcement-learning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/12/22/%E5%8E%9F-map-odom-base-link%E4%B8%89%E8%80%85%E5%85%B3%E7%B3%BB%E7%9A%84%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3/</loc>
+    <lastmod>2018-01-19T15:56:59.109Z</lastmod>
+    <data>
+        <display>
+        <title>map odom base_link三者关系的通俗理解</title>
+        <pubTime>2017-12-22T12:38:01.000Z</pubTime>
+        
+        <tag>ros</tag>
+         
+        <tag>transform</tag>
+         
+        <tag>links</tag>
+         
+         
+           
+             
+              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/12/28/%E5%8E%9F-launchpad%E4%B8%AD%E5%9B%BE%E6%A0%87%E6%98%BE%E7%A4%BA%E5%BC%82%E5%B8%B8/</loc>
+    <lastmod>2018-01-19T15:56:46.237Z</lastmod>
+    <data>
+        <display>
+        <title>launchpad中图标显示异常</title>
+        <pubTime>2017-12-28T02:08:16.000Z</pubTime>
+        
+        <tag>launchpad</tag>
+         
+        <tag>图标异常</tag>
+         
+        <tag>ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/12/21/%E5%8E%9F-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%9C%BA%E8%BD%BDPC%E7%9A%84rviz%E9%97%AA%E9%80%80%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2018-01-19T15:52:01.777Z</lastmod>
+    <data>
+        <display>
+        <title>rviz闪退的解决方案</title>
+        <pubTime>2017-12-21T13:01:57.000Z</pubTime>
+        
+        <tag>ROS</tag>
+         
+        <tag>robot</tag>
+         
+        <tag>rviz</tag>
+         
+         
+           
+             
+              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://yangningbocn.github.io/2017/12/04/%E5%8E%9F-%E6%89%8B%E6%8C%81%E9%95%AD%E7%A5%9ELS01C%E4%BD%BF%E7%94%A8hector-mapping%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E5%BB%BA%E5%9B%BE%E5%AE%9E%E9%AA%8C/</loc>
-    <lastmod>2018-01-19T08:35:48.734Z</lastmod>
+    <lastmod>2018-01-19T15:51:52.934Z</lastmod>
     <data>
         <display>
         <title>SLAM with LS01C and hector</title>
@@ -56,12 +254,12 @@
 
     
   <url>
-    <loc>https://yangningbocn.github.io/2018/01/10/%E5%8E%9F-python%E8%BF%9E%E6%8E%A5gazebo-openAI%E7%9A%84gym-erlerobot%E7%9A%84gym-gazebo-google%E7%9A%84tensorflow/</loc>
-    <lastmod>2018-01-19T08:00:47.371Z</lastmod>
+    <loc>https://yangningbocn.github.io/2018/01/10/%E5%8E%9F-%E5%9C%A8sublime-text3%E5%92%8Cpycharm%E6%97%A0%E6%B3%95import-rospy%E7%AD%89ros-Python%E5%BA%93/</loc>
+    <lastmod>2018-01-19T15:51:25.078Z</lastmod>
     <data>
         <display>
         <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
-        <pubTime>2018-01-10T15:15:48.000Z</pubTime>
+        <pubTime>2018-01-10T13:58:21.000Z</pubTime>
         
         <tag>ubuntu</tag>
          
@@ -78,7 +276,109 @@
          
            
              
-              <breadCrumb title="reinforcement learning" url="https://yangningbocn.github.io/categories/reinforcement-learning/"/>
+              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/10/09/%E5%8E%9F-%E5%9C%A8RVIZ%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8/</loc>
+    <lastmod>2018-01-19T15:50:37.944Z</lastmod>
+    <data>
+        <display>
+        <title>在RVIZ中启动移动机器人模型，并实现横向移动</title>
+        <pubTime>2017-10-09T07:59:54.000Z</pubTime>
+        
+        <tag>ros</tag>
+         
+        <tag>横向移动</tag>
+         
+        <tag>机器人</tag>
+         
+        <tag>rviz</tag>
+         
+         
+           
+             
+              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/10/09/%E5%8E%9F-%E5%9C%A8gazebo%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8/</loc>
+    <lastmod>2018-01-19T15:46:57.842Z</lastmod>
+    <data>
+        <display>
+        <title>gazebo中机器人横向移动</title>
+        <pubTime>2017-10-09T09:37:25.000Z</pubTime>
+        
+        <tag>ROS</tag>
+         
+        <tag>横向移动</tag>
+         
+        <tag>机器人</tag>
+         
+         
+           
+             
+              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/10/17/%E5%8E%9F-%E5%85%B3%E4%BA%8E%E7%91%9E%E5%85%B8%E8%BD%AE%E6%9C%BA%E5%99%A8%E4%BA%BA%E2%80%94%E2%80%94youbot%E7%9A%84%E8%AE%A8%E8%AE%BA/</loc>
+    <lastmod>2018-01-19T15:43:21.745Z</lastmod>
+    <data>
+        <display>
+        <title>关于瑞典轮机器人——youbot的讨论</title>
+        <pubTime>2017-10-17T03:29:43.000Z</pubTime>
+        
+        <tag>ROS</tag>
+         
+        <tag>横向移动</tag>
+         
+        <tag>机器人</tag>
+         
+        <tag>youbot</tag>
+         
+         
+           
+             
+              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>https://yangningbocn.github.io/2017/01/10/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2018-01-19T08:54:00.879Z</lastmod>
+    <data>
+        <display>
+        <title>hexo安装使用和优化</title>
+        <pubTime>2017-01-10T05:00:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Blogs</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
           
         </display>
     </data>
@@ -134,202 +434,6 @@
 
     
   <url>
-    <loc>https://yangningbocn.github.io/2017/10/09/%E5%8E%9F-%E5%9C%A8RVIZ%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8/</loc>
-    <lastmod>2018-01-19T07:50:14.466Z</lastmod>
-    <data>
-        <display>
-        <title>在RVIZ中启动移动机器人模型，并实现横向移动</title>
-        <pubTime>2017-10-09T07:59:54.000Z</pubTime>
-        
-        <tag>ros</tag>
-         
-        <tag>横向移动</tag>
-         
-        <tag>机器人</tag>
-         
-        <tag>rviz</tag>
-         
-         
-           
-             
-              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/12/28/%E5%8E%9F-TensorFlow-in-nvidia-docker-failed-call-to-cuInit-CUDA-ERROR-UNKNOWN/</loc>
-    <lastmod>2018-01-19T07:48:57.643Z</lastmod>
-    <data>
-        <display>
-        <title>TensorFlow in nvidia-docker: failed call to cuInit: CUDA_ERROR_UNKNOWN</title>
-        <pubTime>2017-12-28T12:28:01.000Z</pubTime>
-        
-        <tag>TensorFlow</tag>
-         
-        <tag>nvidia</tag>
-         
-        <tag>CUDA_ERROR_UNKNOWN</tag>
-         
-         
-           
-             
-              <breadCrumb title="reinforcement learning" url="https://yangningbocn.github.io/categories/reinforcement-learning/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2018/01/10/%E5%8E%9F-ubuntu%E4%B8%8A%E6%88%91%E7%9A%84%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2018-01-19T07:26:40.869Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu上装机必备小工具</title>
-        <pubTime>2018-01-10T14:12:51.000Z</pubTime>
-        
-        <tag>ubuntu</tag>
-         
-        <tag>tools</tag>
-         
-        <tag>software</tag>
-         
-         
-           
-             
-              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/12/08/%E5%8E%9F-sublime%E7%9A%84setting-user/</loc>
-    <lastmod>2018-01-19T07:20:39.838Z</lastmod>
-    <data>
-        <display>
-        <title>setting-user of sublime</title>
-        <pubTime>2017-12-08T15:45:05.000Z</pubTime>
-        
-        <tag>ubuntu</tag>
-         
-        <tag>sublime-text3</tag>
-         
-        <tag>setting</tag>
-         
-         
-           
-             
-              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2018/01/16/%E5%8E%9F-ssserver%E5%9C%A8VPS%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E8%87%AA%E5%90%AF%E5%8A%A8/</loc>
-    <lastmod>2018-01-19T07:18:25.727Z</lastmod>
-    <data>
-        <display>
-        <title>ssserver在vps服务器端自启动</title>
-        <pubTime>2018-01-16T11:41:17.000Z</pubTime>
-        
-        <tag>ssserver</tag>
-         
-        <tag>shadowsocks</tag>
-         
-        <tag>nohup</tag>
-         
-        <tag>chacha20</tag>
-         
-         
-           
-             
-              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/12/21/%E5%8E%9F-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%9C%BA%E8%BD%BDPC%E7%9A%84rviz%E9%97%AA%E9%80%80%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    <lastmod>2018-01-19T07:14:55.260Z</lastmod>
-    <data>
-        <display>
-        <title>rviz闪退的解决方案</title>
-        <pubTime>2017-12-21T13:01:57.000Z</pubTime>
-        
-        <tag>ROS</tag>
-         
-        <tag>robot</tag>
-         
-        <tag>rviz</tag>
-         
-         
-           
-             
-              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/12/28/%E5%8E%9F-launchpad%E4%B8%AD%E5%9B%BE%E6%A0%87%E6%98%BE%E7%A4%BA%E5%BC%82%E5%B8%B8/</loc>
-    <lastmod>2018-01-19T07:14:39.197Z</lastmod>
-    <data>
-        <display>
-        <title>launchpad中图标显示异常</title>
-        <pubTime>2017-12-28T02:08:16.000Z</pubTime>
-        
-        <tag>launchpad</tag>
-         
-        <tag>图标异常</tag>
-         
-        <tag>ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/12/22/%E5%8E%9F-map-odom-base-link%E4%B8%89%E8%80%85%E5%85%B3%E7%B3%BB%E7%9A%84%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3/</loc>
-    <lastmod>2018-01-19T07:14:09.361Z</lastmod>
-    <data>
-        <display>
-        <title>map odom base_link三者关系的通俗理解</title>
-        <pubTime>2017-12-22T12:38:01.000Z</pubTime>
-        
-        <tag>ros</tag>
-         
-        <tag>transform</tag>
-         
-        <tag>links</tag>
-         
-         
-           
-             
-              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://yangningbocn.github.io/2017/12/22/%E5%8E%9F-%E7%AC%94%E8%AE%B0%E6%9C%AC-GT-750M-Ubuntu14-04%E5%AE%89%E8%A3%85-CUDA8-0-cuDDN5-1-Tensorflow/</loc>
     <lastmod>2018-01-19T07:05:15.696Z</lastmod>
     <data>
@@ -368,110 +472,6 @@
         <tag>robot</tag>
          
         <tag>sw2urdf</tag>
-         
-         
-           
-             
-              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2018/01/10/%E5%8E%9F-%E5%9C%A8sublime-text3%E5%92%8Cpycharm%E6%97%A0%E6%B3%95import-rospy%E7%AD%89ros-Python%E5%BA%93/</loc>
-    <lastmod>2018-01-19T06:56:29.569Z</lastmod>
-    <data>
-        <display>
-        <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
-        <pubTime>2018-01-10T13:58:21.000Z</pubTime>
-        
-        <tag>ubuntu</tag>
-         
-        <tag>ros</tag>
-         
-        <tag>gazebo</tag>
-         
-        <tag>gym</tag>
-         
-        <tag>python</tag>
-         
-        <tag>Tensorflow</tag>
-         
-         
-           
-             
-              <breadCrumb title="tools" url="https://yangningbocn.github.io/categories/tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/10/17/%E5%8E%9F-%E5%85%B3%E4%BA%8E%E7%91%9E%E5%85%B8%E8%BD%AE%E6%9C%BA%E5%99%A8%E4%BA%BA%E2%80%94%E2%80%94youbot%E7%9A%84%E8%AE%A8%E8%AE%BA/</loc>
-    <lastmod>2018-01-19T06:53:19.501Z</lastmod>
-    <data>
-        <display>
-        <title>关于瑞典轮机器人——youbot的讨论</title>
-        <pubTime>2017-10-17T03:29:43.000Z</pubTime>
-        
-        <tag>ROS</tag>
-         
-        <tag>横向移动</tag>
-         
-        <tag>机器人</tag>
-         
-        <tag>youbot</tag>
-         
-         
-           
-             
-              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/10/09/%E5%8E%9F-%E5%9C%A8gazebo%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8/</loc>
-    <lastmod>2018-01-19T06:47:13.241Z</lastmod>
-    <data>
-        <display>
-        <title>gazebo中机器人横向移动</title>
-        <pubTime>2017-10-09T09:37:25.000Z</pubTime>
-        
-        <tag>ROS</tag>
-         
-        <tag>横向移动</tag>
-         
-        <tag>机器人</tag>
-         
-         
-           
-             
-              <breadCrumb title="ros" url="https://yangningbocn.github.io/categories/ros/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbocn.github.io/2017/01/10/%E5%9C%A8gazebo%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8/</loc>
-    <lastmod>2018-01-16T14:03:09.132Z</lastmod>
-    <data>
-        <display>
-        <title>gazebo中机器人横向移动</title>
-        <pubTime>2017-01-10T05:00:00.000Z</pubTime>
-        
-        <tag>ROS</tag>
-         
-        <tag>横向移动</tag>
-         
-        <tag>机器人</tag>
          
          
            

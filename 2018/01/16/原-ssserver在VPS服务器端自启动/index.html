@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="ssserver在VPS服务器端自启动">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T07:18:25.727Z">
+<meta property="og:updated_time" content="2018-01-19T15:58:19.186Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssserver在vps服务器端自启动">
 <meta name="twitter:description" content="ssserver在VPS服务器端自启动">
@@ -242,7 +242,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
             
@@ -322,7 +322,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ningbo Yang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -409,6 +409,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
             <div class="post-wordcount">
@@ -450,81 +455,15 @@
       
 
       
-        <p>系统环境:Ubuntu </p>
-<p>操作要求：能够进行基本的linux操作</p>
+        <p>系统环境:Ubuntu<br>操作要求：能够进行基本的linux操作</p>
 <hr>
-<p>说明： </p>
-<p>nohup可以让你关闭终端之后，进程依旧在后台运行，如果用&amp;，终端关闭之后进程也随之关闭。就是这样。</p>
-<h2 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h2><pre><code>&lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;.安装pip
- apt-get install python-pip
-
-&lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt;.安装shadowsocks
- pip install shadowsocks
-
-&lt;span class=&quot;hljs-number&quot;&gt;3&lt;/span&gt;. 添加配置文件
-&lt;span class=&quot;hljs-built_in&quot;&gt;sudo&lt;/span&gt; vim /etc/shadowsocks.json
-    内容如下：
-    {
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;server&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-string&quot;&gt;&quot;服务器的ip&quot;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;server_port&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;19175&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;local_address&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-string&quot;&gt;&quot;127.0.0.1&quot;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;local_port&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;1080&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;password&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-string&quot;&gt;&quot;密码&quot;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;timeout&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;300&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;method&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-string&quot;&gt;&quot;aes-256-cfb&quot;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;fast_open&quot;&lt;/span&gt;:&lt;span class=&quot;hljs-literal&quot;&gt;false&lt;/span&gt;
-    }
-    ：wq来保存退出
-
-&lt;span class=&quot;hljs-number&quot;&gt;4&lt;/span&gt;.写脚本文件
-&lt;span class=&quot;hljs-built_in&quot;&gt;sudo&lt;/span&gt; vim /root/shadowsocks.sh
-    内容如下：
-    &lt;span class=&quot;hljs-comment&quot;&gt;#！/bin/bash&lt;/span&gt;
-    &lt;span class=&quot;hljs-comment&quot;&gt;#shadowsocks.sh&lt;/span&gt;
-    ssserver -c /etc/shadowsocks.json
-&lt;span class=&quot;hljs-number&quot;&gt;5&lt;/span&gt;.开机自启动
-&lt;span class=&quot;hljs-built_in&quot;&gt;sudo&lt;/span&gt; vim /etc/rc.local
-    在&lt;span class=&quot;hljs-keyword&quot;&gt;exit&lt;/span&gt;之前输入
-    nohup bash /home/shadow.sh&amp;amp;
-    保存退出
-&lt;span class=&quot;hljs-number&quot;&gt;6&lt;/span&gt;.reboot
-`&lt;/pre&gt;
-
-* * *
-
-加密方式改为”chacha20-ietf” 
-
-优点：据说加密更牛逼，网速也牛逼。然后并没有发现哪里牛逼了，感觉也就手机快一点点吧，这可能就是玄学吧。不管怎么先把过程写出来吧。 
-
-shadowsocks版本不能太低，2.x.x的版本没有chacha20、chacha20-ietf等加密方式，所以要重新装，也要装chacha20的依赖库libsodium。
-
-这个时候要
-
-&lt;pre class=&quot;prettyprint&quot;&gt;`&lt;span class=&quot;hljs-number&quot;&gt;1.&lt;/span&gt;升级pip
-pip install --upgrade pip
-
-&lt;span class=&quot;hljs-number&quot;&gt;2.&lt;/span&gt;升级安装工具
-pip install -U setuptools
-
-&lt;span class=&quot;hljs-number&quot;&gt;3.&lt;/span&gt;安装新的shadowsocks
-pip install git+https://github&lt;span class=&quot;hljs-preprocessor&quot;&gt;.com&lt;/span&gt;/shadowsocks/shadowsocks&lt;span class=&quot;hljs-preprocessor&quot;&gt;.git&lt;/span&gt;@master
-
-&lt;span class=&quot;hljs-number&quot;&gt;4.&lt;/span&gt;安装libsodium
-    apt-get install build-essential
-    wget https://download&lt;span class=&quot;hljs-preprocessor&quot;&gt;.libsodium&lt;/span&gt;&lt;span class=&quot;hljs-preprocessor&quot;&gt;.org&lt;/span&gt;/libsodium/releases/LATEST&lt;span class=&quot;hljs-preprocessor&quot;&gt;.tar&lt;/span&gt;&lt;span class=&quot;hljs-preprocessor&quot;&gt;.gz&lt;/span&gt;
-    tar zxf LATEST&lt;span class=&quot;hljs-preprocessor&quot;&gt;.tar&lt;/span&gt;&lt;span class=&quot;hljs-preprocessor&quot;&gt;.gz&lt;/span&gt;
-    cd libsodium*
-    ./configure
-    make &amp;amp;&amp;amp; make install
-    ldconfig
-
-&lt;span class=&quot;hljs-number&quot;&gt;5.&lt;/span&gt;修改配置文件
-sudo vim /etc/shadowsocks&lt;span class=&quot;hljs-preprocessor&quot;&gt;.json&lt;/span&gt;
-    把加密方式改为：chacha20-ietf
-
-&lt;span class=&quot;hljs-number&quot;&gt;5.&lt;/span&gt;
-reboot
-</code></pre><div>作者：ynb19930428发表于2018/1/16 19:41:17<a href="http://blog.csdn.net/ynb19930428/article/details/79078362" target="_blank" rel="noopener"> 原文链接 </a></div><div> 阅读：11评论：0<a href="http://blog.csdn.net/ynb19930428/article/details/79078362#commentstarget =" target="_blank" rel="noopener">查看评论 </a> </div>
+<p>说明：<br>nohup可以让你关闭终端之后，进程依旧在后台运行，如果用&amp;，终端关闭之后进程也随之关闭。就是这样。</p>
+<p>##命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">1.安装pip</span><br><span class="line"> apt-get install python-pip</span><br><span class="line"> </span><br><span class="line">2.安装shadowsocks</span><br><span class="line"> pip install shadowsocks</span><br><span class="line"></span><br><span class="line">3. 添加配置文件</span><br><span class="line">sudo vim /etc/shadowsocks.json</span><br><span class="line">    内容如下：</span><br><span class="line">    &#123;</span><br><span class="line">    &quot;server&quot;:&quot;服务器的ip&quot;,</span><br><span class="line">    &quot;server_port&quot;:19175,</span><br><span class="line">    &quot;local_address&quot;:&quot;127.0.0.1&quot;,</span><br><span class="line">    &quot;local_port&quot;:1080,</span><br><span class="line">    &quot;password&quot;:&quot;密码&quot;,</span><br><span class="line">    &quot;timeout&quot;:300,</span><br><span class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</span><br><span class="line">    &quot;fast_open&quot;:false</span><br><span class="line">    &#125;</span><br><span class="line">    ：wq来保存退出</span><br><span class="line"></span><br><span class="line">4.写脚本文件</span><br><span class="line">sudo vim /root/shadowsocks.sh</span><br><span class="line">    内容如下：</span><br><span class="line">    #！/bin/bash</span><br><span class="line">    #shadowsocks.sh</span><br><span class="line">    ssserver -c /etc/shadowsocks.json</span><br><span class="line">5.开机自启动</span><br><span class="line">sudo vim /etc/rc.local</span><br><span class="line">    在exit之前输入</span><br><span class="line">    nohup bash /home/shadow.sh&amp;</span><br><span class="line">    保存退出</span><br><span class="line">6.reboot</span><br></pre></td></tr></table></figure>
+<hr>
+<p>加密方式改为”chacha20-ietf”<br>优点：据说加密更牛逼，网速也牛逼。然后并没有发现哪里牛逼了，感觉也就手机快一点点吧，这可能就是玄学吧。不管怎么先把过程写出来吧。<br>shadowsocks版本不能太低，2.x.x的版本没有chacha20、chacha20-ietf等加密方式，所以要重新装，也要装chacha20的依赖库libsodium。</p>
+<p>这个时候要</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">1.升级pip</span><br><span class="line">pip install --upgrade pip</span><br><span class="line"></span><br><span class="line">2.升级安装工具</span><br><span class="line">pip install -U setuptools</span><br><span class="line"></span><br><span class="line">3.安装新的shadowsocks</span><br><span class="line">pip install git+https://github.com/shadowsocks/shadowsocks.git@master</span><br><span class="line"></span><br><span class="line">4.安装libsodium</span><br><span class="line">    apt-get install build-essential</span><br><span class="line">    wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz</span><br><span class="line">    tar zxf LATEST.tar.gz</span><br><span class="line">    cd libsodium*</span><br><span class="line">    ./configure</span><br><span class="line">    make &amp;&amp; make install</span><br><span class="line">    ldconfig</span><br><span class="line"></span><br><span class="line">5.修改配置文件</span><br><span class="line">sudo vim /etc/shadowsocks.json</span><br><span class="line">    把加密方式改为：chacha20-ietf</span><br><span class="line"></span><br><span class="line">5.</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -671,19 +610,14 @@ reboot
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Ningbo Yang" />
             
               <p class="site-author-name" itemprop="name">Ningbo Yang</p>
               <p class="site-description motion-element" itemprop="description">A coder who want to be a programmer.</p>
@@ -770,22 +704,6 @@ reboot
       </section>
 
       
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#命令："><span class="nav-number">1.</span> <span class="nav-text">命令：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
 
       
 
@@ -832,16 +750,30 @@ reboot
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
 
 
 
 
 
-
-
-  <div style="display: none;">
-    <script src="//s95.cnzz.com/z_stat.php?id=yangningbocn@gmail.com&web_id=yangningbocn@gmail.com" language="JavaScript"></script>
-  </div>
 
 
 

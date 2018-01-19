@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="手持镭神LS01C使用hector_mapping方法进行建图实验">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T08:35:48.734Z">
+<meta property="og:updated_time" content="2018-01-19T15:51:52.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SLAM with LS01C and hector">
 <meta name="twitter:description" content="手持镭神LS01C使用hector_mapping方法进行建图实验">
@@ -242,7 +242,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
             
@@ -322,7 +322,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ningbo Yang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -409,6 +409,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
             <div class="post-wordcount">
@@ -454,8 +459,10 @@
 <p>本博客只是个人学习记录使用，瞎写写，内容比较粗糙。</p>
 <ol>
 <li>从镭神客服那里拿到驱动</li>
-<li>对驱动进行阅读，并启动节点获取雷达数据实验<br>在启动激光雷达的过程中可能遇到这样的问题：驱动没问题，launch文件也没问题，但是雷达不旋转，也得不到数据，这是因为激光雷达的端口ttyUSB0(也可能是别的名称，自己查一下吧)没有权限，需要在终端执行以下语句：<br><code>cd /dev
-sudo chmod 777 ttyUSB</code></li>
+<li>对驱动进行阅读，并启动节点获取雷达数据实验<br>在启动激光雷达的过程中可能遇到这样的问题：驱动没问题，launch文件也没问题，但是雷达不旋转，也得不到数据，这是因为激光雷达的端口ttyUSB0(也可能是别的名称，自己查一下吧)没有权限，需要在终端执行以下语句：</li>
+</ol>
+<p>cd /dev<br>sudo chmod 777 ttyUSB</p>
+<ol>
 <li>下载hector源码并编译<br><a href="https://github.com/tu-darmstadt-ros-pkg/hector_slam.git" target="_blank" rel="noopener">hector的github下载地址</a></li>
 <li>启动launch文件就可以建图了</li>
 </ol>
@@ -466,7 +473,7 @@ sudo chmod 777 ttyUSB</code></li>
 </ol>
 <hr>
 <p>后记：建图混乱的原因致使因为这个雷达的性能不满足这个算法。我回头试试用cartographer和这个雷达试试能否建出好图。</p>
-<div>作者：ynb19930428发表于2017/12/4 11:23:05<a href="http://blog.csdn.net/ynb19930428/article/details/78707871" target="_blank" rel="noopener"> 原文链接 </a></div><div> 阅读：58评论：0<a href="http://blog.csdn.net/ynb19930428/article/details/78707871#commentstarget =" target="_blank" rel="noopener">查看评论 </a> </div>
+
       
     </div>
     
@@ -622,6 +629,10 @@ sudo chmod 777 ttyUSB</code></li>
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Ningbo Yang" />
+            
               <p class="site-author-name" itemprop="name">Ningbo Yang</p>
               <p class="site-description motion-element" itemprop="description">A coder who want to be a programmer.</p>
           </div>
@@ -753,16 +764,30 @@ sudo chmod 777 ttyUSB</code></li>
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
 
 
 
 
 
-
-
-  <div style="display: none;">
-    <script src="//s95.cnzz.com/z_stat.php?id=yangningbocn@gmail.com&web_id=yangningbocn@gmail.com" language="JavaScript"></script>
-  </div>
 
 
 
