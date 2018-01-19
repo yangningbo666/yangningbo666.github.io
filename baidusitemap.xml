@@ -6,7 +6,7 @@
     
   <url>
     <loc>https://yangningbocn.github.io/2017/01/10/hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2018-01-19T16:41:05.289Z</lastmod>
+    <lastmod>2018-01-19T16:42:57.448Z</lastmod>
     <data>
         <display>
         <title>hexo安装使用和优化</title>
@@ -27,7 +27,6 @@
     </data>
     </url>
 
-    
     
     
   <url>
@@ -160,9 +159,9 @@
         <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
         <pubTime>2018-01-10T15:15:48.000Z</pubTime>
         
-        <tag>ubuntu</tag>
-         
         <tag>ros</tag>
+         
+        <tag>ubuntu</tag>
          
         <tag>gazebo</tag>
          
@@ -240,9 +239,9 @@
         
         <tag>ROS</tag>
          
-        <tag>robot</tag>
-         
         <tag>rviz</tag>
+         
+        <tag>robot</tag>
          
          
            
@@ -288,9 +287,9 @@
         <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
         <pubTime>2018-01-10T13:58:21.000Z</pubTime>
         
-        <tag>ubuntu</tag>
-         
         <tag>ros</tag>
+         
+        <tag>ubuntu</tag>
          
         <tag>gazebo</tag>
          
