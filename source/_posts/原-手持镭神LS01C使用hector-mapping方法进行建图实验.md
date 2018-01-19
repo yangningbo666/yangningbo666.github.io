@@ -19,10 +19,11 @@ date: 2017-12-04 11:23:05
 1.  从镭神客服那里拿到驱动
 2.  对驱动进行阅读，并启动节点获取雷达数据实验
 在启动激光雷达的过程中可能遇到这样的问题：驱动没问题，launch文件也没问题，但是雷达不旋转，也得不到数据，这是因为激光雷达的端口ttyUSB0(也可能是别的名称，自己查一下吧)没有权限，需要在终端执行以下语句：
-`
+
 cd /dev
 sudo chmod 777 ttyUSB
-`
+
+
 3.  下载hector源码并编译
 [hector的github下载地址](https://github.com/tu-darmstadt-ros-pkg/hector_slam.git)
 4.  启动launch文件就可以建图了
@@ -35,4 +36,3 @@ sudo chmod 777 ttyUSB
 * * *
 
 后记：建图混乱的原因致使因为这个雷达的性能不满足这个算法。我回头试试用cartographer和这个雷达试试能否建出好图。
-<div>作者：ynb19930428发表于2017/12/4 11:23:05[ 原文链接 ](http://blog.csdn.net/ynb19930428/article/details/78707871)</div><div> 阅读：58评论：0[查看评论 ](http://blog.csdn.net/ynb19930428/article/details/78707871#commentstarget =) </div>

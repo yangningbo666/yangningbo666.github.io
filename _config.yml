@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 keywords: ros, ubuntu, TensorFlow, gazebo, rviz, robot, reinforcement learning
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://yangningbocn.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -27,8 +27,9 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - README.md
+  - 404.html
   - baidu_verify_IIJFGFbbEX.html
-
+  - google005f20e2891088fe.html
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -73,6 +74,10 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+Plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+
 ## Themes: https://hexo.io/themes/
 theme: next
 
@@ -89,6 +94,12 @@ deploy:
 duoshuo:
   enable: true
   shortname: your-duoshuo-shortname
-
+#sitemap
 sitemap:
-path: sitemap.xml
+  path: sitemap.xml
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

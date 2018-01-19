@@ -19,21 +19,28 @@ date: 2017-12-28 10:08:16
 
 打开终端
 
-<pre name="code" class="plain">cd /usr/share/applications/</pre><pre name="code" class="plain">ls</pre>然后找到你的图标<pre name="code" class="plain">sudo vim *.desktop</pre><span style="white-space:pre">	</span>*为你的app的name
+cd /usr/share/applications/
+ls
 
-<pre name="code" class="plain">[Desktop Entry]
-Name=Youdao Dict
-Name[zh_CN]=有道词典
-Name[zh_TW]=有道詞典
-Exec=youdao-dict %f
-<u><span style="color:#ff0000;">Icon</span></u>=/usr/share/youdao-dict/app/assets/youdao-dict.png
-Terminal=false
-X-MultipleArgs=false
-Type=Application
-Encoding=UTF-8
-Categories=Application;Utility;Dictionary;
-StartupNotify=false</pre>把Icon后面的路径改为你的图片的路径
+然后找到你的图标
 
-<span style="white-space:pre">	</span><pre name="code" class="html">sudo reboot</pre>
+sudo vim *.desktop
 
-<div>作者：ynb19930428发表于2017/12/28 10:08:16[ 原文链接 ](http://blog.csdn.net/ynb19930428/article/details/78918910)</div><div> 阅读：52评论：0[查看评论 ](http://blog.csdn.net/ynb19930428/article/details/78918910#commentstarget =) </div>
+*为你的app的name
+
+    [Desktop Entry]
+    Name=Youdao Dict
+    Name[zh_CN]=有道词典
+    Name[zh_TW]=有道詞典
+    Exec=youdao-dict %f
+    Icon=/usr/share/youdao-dict/app/assets/youdao-dict.png
+    Terminal=false
+    X-MultipleArgs=false
+    Type=Application
+    Encoding=UTF-8
+    Categories=Application;Utility;Dictionary;
+    StartupNotify=false
+
+把Icon后面的路径改为你的图片的路径
+
+sudo reboo

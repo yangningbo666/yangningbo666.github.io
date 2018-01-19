@@ -63,22 +63,35 @@ cd到hexo的根目录下
 ---
 
 优化
-# git安装
+# 1.git安装
     npm install hexo-deployer-git --save
 
-# 迁移
+# 2.迁移
 支持很多种迁移方式，我采用的是RSS的，其他可以看官网
 [hexo迁移官网](https://hexo.io/zh-cn/docs/migration.html)
     
     npm install hexo-migrator-rss --save
     hexo migrate rss <source>
 
-# 图片插入
+# 3.图片插入
     npm install https://github.com/CodeFalling/hexo-asset-image --save
 然后把图片放入对应文章的配套文件夹下，比如1.png
 
+# 4.Google收录
+    npm install hexo-generator-sitemap --save
+    [Google站长收录网站](https://www.google.com/webmasters/tools/home?hl=zh-CN)
 
+# 5.文章访问量统计
+使用LeanCloud，评论也可以使用它，省心。[参考博客](https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud)
 
+# 6.local research
+本地搜索很好用。在主题配置文件中修改local research就好
+
+# 7.RSS
+使用 Hexo 生成的 Feed 链接。 你可以需要先安装 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 插件。
+
+---
+next官网 http://theme-next.iissnan.com/
 
 
 

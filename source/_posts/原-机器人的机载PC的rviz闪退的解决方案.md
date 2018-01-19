@@ -28,4 +28,3 @@ date: 2017-12-21 21:01:57
 1.使用zeroconf，通过ssh连接miniPC，进行控制，在自己的电脑上打开rviz，就能订阅miniPC上的topic 
 
 2.先插上显示器，打开rviz后，然后拔掉VGA或者HDMI.(这个方法是别人告诉我的不知道可不可行)
-<div>作者：ynb19930428发表于2017/12/21 21:01:57[ 原文链接 ](http://blog.csdn.net/ynb19930428/article/details/78867709)</div><div> 阅读：27评论：0[查看评论 ](http://blog.csdn.net/ynb19930428/article/details/78867709#commentstarget =) </div>

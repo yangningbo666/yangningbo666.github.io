@@ -65,4 +65,3 @@ That would be really great to have more realistic solution. For my requirement, 
 网址： 
 
 [Move the youbot using its wheels](https://github.com/micpalmia/youbot_ros_tools/issues/5)
-<div>作者：ynb19930428发表于2017/10/17 11:29:43[ 原文链接 ](http://blog.csdn.net/ynb19930428/article/details/78258612)</div><div> 阅读：130评论：0[查看评论 ](http://blog.csdn.net/ynb19930428/article/details/78258612#commentstarget =) </div>

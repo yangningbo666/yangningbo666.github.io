@@ -22,7 +22,7 @@ sublime版本:3126
 1.  注册的问题
  百度一搜一大堆，关键词为：sublime3126注册码，举个栗子：[用力戳这里](http://blog.csdn.net/javaexploreroooo/article/details/77989993)
 2.  配置文件不能修改的问题
-    Perferences-&gt;setting
+    Perferences-setting
 打开之后，有两块左右各一，一开始很傻，一直在左边Default修改，发现怎么改也改不了，一度怀疑人生，后来才发现右边也有一个框，把你想要修改的部分复制到右边，然后再修改就好了，会优先加载user中的内容
 '''
 {
@@ -43,4 +43,3 @@ sublime版本:3126
 '''
 
 我的是这样的，我喜欢Courier New的字体，你也可以试试，看起来很舒服。因为想要用python，所以把tab转换为space，这样省了很多事情。
-<div>作者：ynb19930428发表于2017/12/8 23:45:05[ 原文链接 ](http://blog.csdn.net/ynb19930428/article/details/78756589)</div><div> 阅读：22评论：0[查看评论 ](http://blog.csdn.net/ynb19930428/article/details/78756589#commentstarget =) </div>

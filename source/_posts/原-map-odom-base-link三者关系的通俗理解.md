@@ -50,4 +50,3 @@ date: 2017-12-22 20:38:01
 odom和map坐标系在机器人运动开始是重合的。但是，随着时间的推移是不重合的，而出现的偏差就是里程计的累积误差。那map–&gt;odom的tf就是在一些校正传感器合作校正的package比如gmapping会给出一个位置估计（localization），这可以得到map–&gt;base_link的tf，所以估计位置和里程计位置的偏差也就是odom与map的坐标系偏差。所以，如果你的odom计算没有错误，那么map–&gt;odom的tf就是0\. 
 
 ![这里写图片描述](http://img.blog.csdn.net/20171222203520897?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW5iMTk5MzA0Mjg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/NorthWest)
-<div>作者：ynb19930428发表于2017/12/22 20:38:01[ 原文链接 ](http://blog.csdn.net/ynb19930428/article/details/78876610)</div><div> 阅读：20评论：0[查看评论 ](http://blog.csdn.net/ynb19930428/article/details/78876610#commentstarget =) </div>

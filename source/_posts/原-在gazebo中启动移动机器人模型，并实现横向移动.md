@@ -17,31 +17,19 @@ date: 2017-10-09 17:37:25
 
 在gazebo中的横向移动同样要修改控制方式，只不过在与rviz不同，不能直接修改，文件格式打不开，这里采用的方案是直接在xacro中加载一个平面移动的插件就可以了 
 
-`&lt;!-- position controller --&gt; 
-
-    &lt;gazebo&gt; 
-
-      &lt;plugin name="base_controller" filename="libgazebo_ros_planar_move.so"&gt; 
-
-        &lt;commandTopic&gt;cmd_vel&lt;/commandTopic&gt; 
-
-        &lt;odometryTopic&gt;odom&lt;/odometryTopic&gt; 
-
-        &lt;odometryFrame&gt;/odom&lt;/odometryFrame&gt; 
-
-        &lt;odometryRate&gt;100.0&lt;/odometryRate&gt; 
-
-        &lt;robotBaseFrame&gt;base_footprint&lt;/robotBaseFrame&gt; 
-
-        &lt;broadcastTF&gt;true&lt;/broadcastTF&gt; 
-
-      &lt;/plugin&gt; 
-
-    &lt;/gazebo&gt;`
-
-* * *
+    <!-- position controller -->
+    <gazebo>
+      <plugin name="base_controller" filename="libgazebo_ros_planar_move.so">
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>/odom</odometryFrame>
+        <odometryRate>100.0</odometryRate>
+        <robotBaseFrame>base_footprint</robotBaseFrame>
+        <broadcastTF>true</broadcastTF>
+      </plugin>
+    </gazebo>
 
 1.  模型xacro加载到gazebo
 沿用yaked大神博客中的gazebo.launch进行修改，把自己的模型修改到他的launch文件中，就可以了。＇
 
-2.  gazebo加入上面的代码<div>作者：ynb19930428发表于2017/10/9 17:37:25[ 原文链接 ](http://blog.csdn.net/ynb19930428/article/details/78184904)</div><div> 阅读：497评论：0[查看评论 ](http://blog.csdn.net/ynb19930428/article/details/78184904#commentstarget =) </div>
+2.  gazebo加入上面的代码
