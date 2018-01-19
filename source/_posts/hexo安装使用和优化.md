@@ -1,11 +1,11 @@
 ---
 title: hexo安装使用和优化
-categories: tools
+categories: IT
 tags: [Hexo, Blogs, Github]
 comments: true
 keywords: Hexo, Blog, GitHub
 description: 使用Hexo在GitHub上搭建个人博客
-date: 2017-01-010 13:00:00
+date: 2018-01-20 13:00:00
 ---
 
 本文主要使用GitHub pages + hexo 来搭建个人博客，作日常学习使用。在这里只提主要步骤，不提具体过程，需要的话自行谷歌。
@@ -93,6 +93,8 @@ cd到hexo的根目录下
 ---
 next官网 http://theme-next.iissnan.com/
 
+# 8.阅读时长插件
+npm install  hexo-wordcount --save
 
 
 

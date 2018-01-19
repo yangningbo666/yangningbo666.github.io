@@ -7,6 +7,7 @@ tags:
     - links
 comments: true
 keywords: ros, tf, map, odom, base_link
+description: 这篇博客用通俗易懂的方法详细讲解了map odom base_link这三者的关系。
 date: 2017-12-22 20:38:01
 ---
 
