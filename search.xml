@@ -145,8 +145,8 @@
         <category>ros</category>
       </categories>
       <tags>
-        <tag>ROS</tag>
         <tag>rviz</tag>
+        <tag>ROS</tag>
         <tag>robot</tag>
       </tags>
   </entry>
@@ -211,9 +211,9 @@
         <category>ros</category>
       </categories>
       <tags>
-        <tag>ROS</tag>
         <tag>横向移动</tag>
         <tag>机器人</tag>
+        <tag>ROS</tag>
         <tag>youbot</tag>
       </tags>
   </entry>
@@ -225,9 +225,9 @@
         <category>ros</category>
       </categories>
       <tags>
-        <tag>ROS</tag>
         <tag>横向移动</tag>
         <tag>机器人</tag>
+        <tag>ROS</tag>
       </tags>
   </entry>
   <entry>
@@ -265,9 +265,9 @@
         <category>ros</category>
       </categories>
       <tags>
-        <tag>ROS</tag>
         <tag>横向移动</tag>
         <tag>机器人</tag>
+        <tag>ROS</tag>
       </tags>
   </entry>
   <entry>
