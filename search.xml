@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在markdown中引入图片的解决方案]]></title>
+    <url>%2F2018%2F01%2F20%2F%E5%8E%9F-markdown%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5%2F</url>
+    <content type="text"><![CDATA[#背景 需要GitHub账号 需要基本的git命令知识 基本的计算机技能 #方法说明： 首先在github中新建一个repo，然后git clone下来，然后把你想要的图片放到这个文件夹中然后上传，然后到GitHub中找到这个图片查看地址，在markdown中引用就好了。 #具体步骤 新建一个repo 打开终端,并到一个你的目录下面 git clone https://github.com/****/markdownImages.git **为你的用户名* 把你要用的图片放进去,图片名要用英文 git add 图片名 git commit -m “图片名” git push origin master 打开浏览器进入你的github,找到相应的图片打开,github能预览出图片就OK,然后右键图片复制图片的地址 打开你的markdown编辑器,享受吧]]></content>
+      <categories>
+        <category>IT</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>images</tag>
+        <tag>links，github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo安装使用和优化]]></title>
-    <url>%2F2018%2F01%2F20%2Fhexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96%2F</url>
+    <url>%2F2018%2F01%2F20%2F%E5%8E%9F-hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96%2F</url>
     <content type="text"><![CDATA[本文主要使用GitHub pages + hexo 来搭建个人博客，作日常学习使用。在这里只提主要步骤，不提具体过程，需要的话自行谷歌。 安装与配置 安装1.git2.Node.js进入官网[官网链接](https://nodejs.org/en/) 下载安装包，直接点击安装就可以了 3.hexo这一步在命令行下做 npm install -g hexo-cli cd *your direction* hexo init npm install hexo server - Hexo - Blogs - Github 打开浏览器输入 http://0.0.0.0:4000/ 出现hexo说明成功接下来是修改主题，你也可以去下别的主题很多，自行谷歌 cd themes git clone https://github.com/litten/hexo-theme-next.git 然后打开Hexo文件夹下面的_config.yml文件，修改里面的theme为next重新打开server，浏览器输入http://0.0.0.0:4000/查看主题。 GitHub配置1.仓库创建一个仓库名称为yangningbocn.github.io这里要把yangningbocn换成你自己的GitHub用户名 2.配置SSH配置hexo1.配置hexo目录下的_config.yml文件# Deployment ## Docs: http://hexo.io/docs/deployment.html deploy: type: git repository: https://github.com:yangningbocn/yangningbocn.github.io.git branch: master name: Ningbo Yang emai: yangningbocn@gmail.com 2.测试cd到hexo的根目录下 hexo clean hexo g hexo d 优化 1.git安装npm install hexo-deployer-git --save 2.迁移支持很多种迁移方式，我采用的是RSS的，其他可以看官网hexo迁移官网 npm install hexo-migrator-rss --save hexo migrate rss &lt;source&gt; 3.图片插入npm install https://github.com/CodeFalling/hexo-asset-image --save 然后把图片放入对应文章的配套文件夹下，比如1.png 4.Google收录npm install hexo-generator-sitemap --save [Google站长收录网站](https://www.google.com/webmasters/tools/home?hl=zh-CN) 5.文章访问量统计使用LeanCloud，评论也可以使用它，省心。参考博客 6.local research本地搜索很好用。在主题配置文件中修改local research就好 7.RSS使用 Hexo 生成的 Feed 链接。 你可以需要先安装 hexo-generator-feed 插件。 next官网 http://theme-next.iissnan.com/ 8.阅读时长插件npm install hexo-wordcount –save]]></content>
       <categories>
         <category>IT</category>
@@ -145,8 +158,8 @@
         <category>ros</category>
       </categories>
       <tags>
-        <tag>rviz</tag>
         <tag>ROS</tag>
+        <tag>rviz</tag>
         <tag>robot</tag>
       </tags>
   </entry>
@@ -211,9 +224,9 @@
         <category>ros</category>
       </categories>
       <tags>
+        <tag>ROS</tag>
         <tag>横向移动</tag>
         <tag>机器人</tag>
-        <tag>ROS</tag>
         <tag>youbot</tag>
       </tags>
   </entry>
@@ -225,9 +238,9 @@
         <category>ros</category>
       </categories>
       <tags>
+        <tag>ROS</tag>
         <tag>横向移动</tag>
         <tag>机器人</tag>
-        <tag>ROS</tag>
       </tags>
   </entry>
   <entry>
@@ -258,16 +271,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[gazebo中机器人横向移动]]></title>
-    <url>%2F2017%2F01%2F10%2F%E5%9C%A8gazebo%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8%2F</url>
-    <content type="text"><![CDATA[本博客只是个人学习记录使用，瞎写写，内容比较粗糙。编写过程中，借鉴了yaked大神的实战youBot和ROS-WIKI以及其它一些大神的内容。现在大部分的移动机器人主要差动轮进行运动，只有linear.x和angular.z两个值，但是我的模型是４个瑞典轮，能提供横向的移动速度，即linear.y。在gazebo中的横向移动同样要修改控制方式，只不过在与rviz不同，不能直接修改，文件格式打不开，这里采用的方案是直接在xacro中加载一个平面移动的插件就可以了 &lt;!-- position controller --&gt; &lt;gazebo&gt; &lt;plugin name=&quot;base_controller&quot; filename=&quot;libgazebo_ros_planar_move.so&quot;&gt; &lt;commandTopic&gt;cmd_vel&lt;/commandTopic&gt; &lt;odometryTopic&gt;odom&lt;/odometryTopic&gt; &lt;odometryFrame&gt;/odom&lt;/odometryFrame&gt; &lt;odometryRate&gt;100.0&lt;/odometryRate&gt; &lt;robotBaseFrame&gt;base_footprint&lt;/robotBaseFrame&gt; &lt;broadcastTF&gt;true&lt;/broadcastTF&gt; &lt;/plugin&gt; &lt;/gazebo&gt;` 模型xacro加载到gazebo沿用yaked大神博客中的gazebo.launch进行修改，把自己的模型修改到他的launch文件中，就可以了。＇ gazebo加入上面的代码]]></content>
+    <title><![CDATA[免费翻墙]]></title>
+    <url>%2F2017%2F01%2F20%2F%E5%8E%9F-%E5%A6%82%E6%9E%9C%E5%85%8D%E8%B4%B9%E7%BF%BB%E5%A2%99%2F</url>
+    <content type="text"><![CDATA[1.打开ishadowishadow的网址为(https://global.ishadowx.net/) 2.下拉并找到SS下载ss到计算机，如果是手机下载相应的app 3.解压缩解压缩完了之后尽量不要放在桌面，放在一个文件夹中，因为它会产生一些配置文件，并放个快捷方式到桌面 4.get free ss 在刚才打开的网页上找到GET FREE SS的按钮 然后点击，会跳到一堆美食图片那里 然后随便选一个，鼠标放上去 点击click to View QR Code 这时候屏幕上回出现一个二维码 这时候不要关右键右下角的小飞机图标 服务器-&gt;扫描屏幕上的二维码 在弹出的窗口上点击确定 然后启动系统代理，尽情的享受外面的世界吧。]]></content>
       <categories>
-        <category>ros</category>
+        <category>IT</category>
       </categories>
       <tags>
-        <tag>横向移动</tag>
-        <tag>机器人</tag>
-        <tag>ROS</tag>
+        <tag>shadowsocks</tag>
+        <tag>免费翻墙</tag>
       </tags>
   </entry>
   <entry>
@@ -281,6 +293,19 @@
         <tag>Hexo</tag>
         <tag>Blogs</tag>
         <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[gazebo中机器人横向移动]]></title>
+    <url>%2F2017%2F01%2F10%2F%E5%9C%A8gazebo%E4%B8%AD%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%A8%A1%E5%9E%8B%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8%2F</url>
+    <content type="text"><![CDATA[本博客只是个人学习记录使用，瞎写写，内容比较粗糙。编写过程中，借鉴了yaked大神的实战youBot和ROS-WIKI以及其它一些大神的内容。现在大部分的移动机器人主要差动轮进行运动，只有linear.x和angular.z两个值，但是我的模型是４个瑞典轮，能提供横向的移动速度，即linear.y。在gazebo中的横向移动同样要修改控制方式，只不过在与rviz不同，不能直接修改，文件格式打不开，这里采用的方案是直接在xacro中加载一个平面移动的插件就可以了 &lt;!-- position controller --&gt; &lt;gazebo&gt; &lt;plugin name=&quot;base_controller&quot; filename=&quot;libgazebo_ros_planar_move.so&quot;&gt; &lt;commandTopic&gt;cmd_vel&lt;/commandTopic&gt; &lt;odometryTopic&gt;odom&lt;/odometryTopic&gt; &lt;odometryFrame&gt;/odom&lt;/odometryFrame&gt; &lt;odometryRate&gt;100.0&lt;/odometryRate&gt; &lt;robotBaseFrame&gt;base_footprint&lt;/robotBaseFrame&gt; &lt;broadcastTF&gt;true&lt;/broadcastTF&gt; &lt;/plugin&gt; &lt;/gazebo&gt;` 模型xacro加载到gazebo沿用yaked大神博客中的gazebo.launch进行修改，把自己的模型修改到他的launch文件中，就可以了。＇ gazebo加入上面的代码]]></content>
+      <categories>
+        <category>ros</category>
+      </categories>
+      <tags>
+        <tag>ROS</tag>
+        <tag>横向移动</tag>
+        <tag>机器人</tag>
       </tags>
   </entry>
 </search>
