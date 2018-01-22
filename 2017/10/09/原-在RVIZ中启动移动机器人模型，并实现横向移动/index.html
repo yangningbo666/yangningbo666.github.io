@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="在gazebo中启动移动机器人模型，并实现横向移动">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T15:50:37.944Z">
+<meta property="og:updated_time" content="2018-01-22T14:40:59.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在RVIZ中启动移动机器人模型，并实现横向移动">
 <meta name="twitter:description" content="在gazebo中启动移动机器人模型，并实现横向移动">
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3,522
+                  3,548
                 </span>
               
 
@@ -453,7 +453,7 @@
       
 
       
-        <p>本博客只是个人学习记录使用，瞎写写，内容比较粗糙。编写过程中，借鉴了古月居大神的smartcar和ROS-WIKI以及其它一些大神的内容。  </p>
+        <p>（转载请注明作者和出处：<a href="https://yangningbocn.github.io">https://yangningbocn.github.io</a> 未经允许请勿用于商业用途）<br>本博客只是个人学习记录使用，瞎写写，内容比较粗糙。编写过程中，借鉴了古月居大神的smartcar和ROS-WIKI以及其它一些大神的内容。  </p>
 <p>引入古月居大神的链接<a href="http://www.guyuehome.com/248" target="_blank" rel="noopener">使用smartcar进行仿真</a>和<a href="http://www.guyuehome.com/251" target="_blank" rel="noopener">smartcar源码上传</a></p>
 <h2 id="下面我针对自己的机器人编写的代码和文件。"><a href="#下面我针对自己的机器人编写的代码和文件。" class="headerlink" title="下面我针对自己的机器人编写的代码和文件。"></a>下面我针对自己的机器人编写的代码和文件。</h2><p>launch文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;launch&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;param name=&quot;/use_sim_time&quot; value=&quot;false&quot; /&gt;  </span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">    &lt;!-- Load the URDF/Xacro model of our robot --&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;arg name=&quot;urdf_file&quot; default=&quot;$(find xacro)/xacro.py &apos;$(find smartcar_description)/urdf/smartcar.urdf.xacro&apos;&quot; /&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;arg name=&quot;gui&quot; default=&quot;true&quot; /&gt;  </span><br><span class="line">    &lt;param name=&quot;robot_description&quot; command=&quot;$(arg urdf_file)&quot; /&gt;  </span><br><span class="line">    &lt;param name=&quot;use_gui&quot; value=&quot;$(arg gui)&quot;/&gt;  </span><br><span class="line">    &lt;node name=&quot;arbotix&quot; pkg=&quot;arbotix_python&quot; type=&quot;arbotix_driver&quot; output=&quot;screen&quot;&gt;  </span><br><span class="line">        &lt;rosparam file=&quot;$(find smartcar_description)/config/smartcar_arbotix.yaml&quot; command=&quot;load&quot; /&gt; </span><br><span class="line">        &lt;param name=&quot;sim&quot; value=&quot;true&quot;/&gt;  </span><br><span class="line">    &lt;/node&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;node name=&quot;joint_state_publisher&quot; pkg=&quot;joint_state_publisher&quot; type=&quot;joint_state_publisher&quot; &gt;  </span><br><span class="line"></span><br><span class="line">    &lt;/node&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;node name=&quot;robot_state_publisher&quot; pkg=&quot;robot_state_publisher&quot; type=&quot;state_publisher&quot;&gt;  </span><br><span class="line"></span><br><span class="line">        &lt;param name=&quot;publish_frequency&quot; type=&quot;double&quot; value=&quot;20.0&quot; /&gt;  </span><br><span class="line"></span><br><span class="line">    &lt;/node&gt;  </span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">     &lt;!-- We need a static transforms for the wheels --&gt;  </span><br><span class="line"></span><br><span class="line">     &lt;node pkg=&quot;tf&quot; type=&quot;static_transform_publisher&quot; name=&quot;odom_left_wheel_broadcaster&quot; args=&quot;0 0 0 0 0 0 /base_link /left_front_link 100&quot; /&gt;  </span><br><span class="line"></span><br><span class="line">     &lt;node pkg=&quot;tf&quot; type=&quot;static_transform_publisher&quot; name=&quot;odom_right_wheel_broadcaster&quot; args=&quot;0 0 0 0 0 0 /base_link /right_front_link 100&quot; /&gt;  </span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">    &lt;node name=&quot;rviz&quot; pkg=&quot;rviz&quot; type=&quot;rviz&quot; args=&quot;-d $(find smartcar_description)/urdf.rviz&quot; /&gt;  </span><br><span class="line"></span><br><span class="line">&lt;/launch&gt;</span><br></pre></td></tr></table></figure>
@@ -649,7 +649,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -671,7 +671,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-count">47</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -691,9 +691,9 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://www.zhihu.com/people/yang-zhu-bo-56/activities" target="_blank" title="zhihu">
+                    <a href="https://www.zhihu.com/people/yang-zhu-bo-56/activities" target="_blank" title="Zhihu">
                       
-                        <i class="fa fa-fw fa-zhihu"></i>zhihu</a>
+                        <i class="fa fa-fw fa-zhihu"></i>Zhihu</a>
                   </span>
                 
                   <span class="links-of-author-item">
