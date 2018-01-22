@@ -11,8 +11,7 @@ keywords: ubuntu, CUDA, cuDDN, Tensorflow
 description: 安装TensorFlow的教程
 date: 2017-12-22 10:39:02
 ---
-
-## 原创，转载请注明出处
+（转载请注明作者和出处：https://yangningbocn.github.io 未经允许请勿用于商业用途）
 
 笔记本型号：联想Y500 
 
