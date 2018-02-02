@@ -92,6 +92,5 @@ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 sudo vim /etc/shadowsocks.json
     把加密方式改为：chacha20-ietf
 
-5.
-reboot
+5.reboot
 ```

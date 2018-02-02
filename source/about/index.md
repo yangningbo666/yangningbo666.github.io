@@ -7,8 +7,7 @@ date: 2018-01-19 23:18:36
 
 Author: Ningbo Yang
 GitHub: https://github.com/yangningbocn 
-E-Mail: yangningbocn@gmail.com
-        365220121@qq.com 
+E-Mail: yangningbocn@gmail.com  365220121@qq.com 
 QQ: 365220121 
 
 # Education
