@@ -3,8 +3,55 @@
   
     
     <entry>
+      <title><![CDATA[小谈安装固态硬盘后Windows及Ubuntu的安装]]></title>
+      <url>/2018/02/02/%E5%8E%9F-%E5%AE%89%E8%A3%85%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98%E5%90%8EWindows%E5%8F%8AUbuntu%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+      <content type="html"><![CDATA[<p>（转载请注明作者和出处：<a href="https://yangningbocn.github.io">https://yangningbocn.github.io</a> 未经允许请勿用于商业用途）</p>
+<h1 id="固态硬盘的安装"><a href="#固态硬盘的安装" class="headerlink" title="固态硬盘的安装"></a>固态硬盘的安装</h1><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>根据自己笔记本光驱厚度选择硬盘光驱位托架,我就被淘宝卖家坑了14块钱的东西还要让我退回去!难受!</li>
+<li>安装的时候要固定好,合盖之前先开机试试有没有装好.</li>
+<li>对于我的笔记本Y500可以买现成的光驱位托架,虽然贵了30块钱,不过省心</li>
+</ol>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>拔掉电源,拆掉电池,拆掉后盖</li>
+<li>取出机械硬盘,取出光驱</li>
+<li>把机械硬盘装到光驱位,测试是否正常</li>
+<li>把机械硬盘拆除,安装固态硬盘</li>
+<li>在只有新装的固态硬盘的时候,装系统,全部是为分配的空间下,装系统,让Windows自己决定如何分区,这样很容易4k对齐,分区也很科学(PS:我的2.5寸固态为256G浦科特M8V)</li>
+</ol>
+<hr>
+<h1 id="Windows-10系统版本的选择"><a href="#Windows-10系统版本的选择" class="headerlink" title="Windows 10系统版本的选择"></a>Windows 10系统版本的选择</h1><p>Windows有很多版本,如家庭版,专业版,企业版,教育版.详细的在这里就不讨论了,如果想了解的话可以移步<a href="https://www.zhihu.com/question/41293675" target="_blank" rel="noopener">此网站</a>,我的结论是,从本质上对于<strong>一般用户</strong>比如你我他用家庭版的就够了,使用不到别的版本的功能,对于一些专业的用户,才需要尝试高级的版本.除此之外你还可以使用insider preview.</p>
+<hr>
+<h1 id="Ubuntu的安装"><a href="#Ubuntu的安装" class="headerlink" title="Ubuntu的安装"></a>Ubuntu的安装</h1><p>对于Ubuntu版本,我这次选择的是16.04,由于我用到的工具官方只维护16.04上的内容,所以不得不选择这样.</p>
+<h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤:"></a>安装步骤:</h2><ol>
+<li>拆除256G的固态硬盘,拆除机械硬盘.</li>
+<li>启动Ubuntu的安装,一直下一步,选择擦除所有,然后让系统安装程序自己选择分区,自己就不手动选了.simple is best.系统尽量选择英文吧,会少很多坑.</li>
+<li>然后把硬盘都装上</li>
+<li>这样的话,在BIOS是设置启动顺序,第一位置给Windows 10,第二顺序给Ubuntu 16.04 ,如果开机想换系统,可以通过顺序的改变来选择,两个系统之间互不干扰.</li>
+</ol>
+]]></content>
+      
+        <categories>
+            
+            <category> tools </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Windows 10 </tag>
+            
+            <tag> 升级 </tag>
+            
+            <tag> 固态硬盘 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[简单了解区块链技术以及比特币]]></title>
-      <url>/2018/01/22/%E5%8E%9F-%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E4%BB%A5%E5%8F%8A%E6%AF%94%E7%89%B9%E5%B8%81/</url>
+      <url>/2018/01/22/20180122_%E7%AE%80%E5%8D%95%E4%BA%86%E8%A7%A3%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E4%BB%A5%E5%8F%8A%E6%AF%94%E7%89%B9%E5%B8%81/</url>
       <content type="html"><![CDATA[<p>（转载请注明作者和出处：<a href="https://yangningbocn.github.io">https://yangningbocn.github.io</a> 未经允许请勿用于商业用途）</p>
 <p>视频地址: <a href="https://www.youtube.com/watch?v=obRzfcvMshM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=obRzfcvMshM</a></p>
 <h1 id="比特币主要技术和特点"><a href="#比特币主要技术和特点" class="headerlink" title="比特币主要技术和特点:"></a>比特币主要技术和特点:</h1><ol>
@@ -37,21 +84,21 @@
 </ul>
 </li>
 <li>交易双方使用账号进行交易<br>账号是通过把公钥输入某个函数得到</li>
-<li>转账记录的存储和维护<br>很多设备同时存储和维护<h1 id="三个一致性方面的问题和解决方案"><a href="#三个一致性方面的问题和解决方案" class="headerlink" title="三个一致性方面的问题和解决方案"></a>三个一致性方面的问题和解决方案</h1><h2 id="三个一致性方面的问题"><a href="#三个一致性方面的问题" class="headerlink" title="三个一致性方面的问题:"></a>三个一致性方面的问题:</h2><ul>
+<li>转账记录的存储和维护<br>很多设备同时存储和维护</li>
+</ol>
+<h1 id="三个一致性方面的问题和解决方案"><a href="#三个一致性方面的问题和解决方案" class="headerlink" title="三个一致性方面的问题和解决方案"></a>三个一致性方面的问题和解决方案</h1><h2 id="三个一致性方面的问题"><a href="#三个一致性方面的问题" class="headerlink" title="三个一致性方面的问题:"></a>三个一致性方面的问题:</h2><ul>
 <li>如何进行同步</li>
 <li>如何防止记录被篡改</li>
-<li>如何防止同一笔比特别收入被重复使用<h2 id="比特币利用区块链解决三个一致性方面的问题"><a href="#比特币利用区块链解决三个一致性方面的问题" class="headerlink" title="比特币利用区块链解决三个一致性方面的问题:"></a>比特币利用区块链解决三个一致性方面的问题:</h2></li>
-</ul>
-</li>
+<li>如何防止同一笔比特别收入被重复使用<h2 id="比特币利用区块链解决三个一致性方面的问题"><a href="#比特币利用区块链解决三个一致性方面的问题" class="headerlink" title="比特币利用区块链解决三个一致性方面的问题:"></a>比特币利用区块链解决三个一致性方面的问题:</h2><ol>
 <li>区块中包含很多交易信息</li>
 <li>区块线性连接成为一个区块链</li>
 <li>由矿工产生新区块,在此之前需要接收网络上的结点,并验证,然后才能去产生新区块</li>
-<li>使用额外的工作的方法限制矿工单位时间产生的新区快的数量<br>额外的工作为:<ul>
-<li>新制作的区块内容(组成一个字符串):前一个区块的SHA-256函数值 + 这个新区快的基本信息 + 这个新区快所包含的所有交易记录.每一个区块都含有上一个的SHA-256值</li>
+<li>使用额外的工作的方法限制矿工单位时间产生的新区快的数量<br>额外的工作为:</li>
+</ol>
+</li>
+<li>新制作的区块内容(组成一个字符串):前一个区块的SHA-256函数值 + 这个新区块的基本信息 + 这个新区块所包含的所有交易记录.每一个区块都含有上一个的SHA-256值</li>
 <li>在字符串后面加上一个随机数,组成新的字符串.新的字符串经过SHA-256计算后得到的256位的二进制数.如果这个256位二进制数的前72位全是0,则完成了这个额外的工作.<br>每一位为0的概率为0.5,72位全为0的概率为1/72<br>额外的工作完成之后把:前一个区块的SHA-256函数值 + 这个新区快的基本信息 + 这个新区快所包含的所有交易记录+找到的随机数 组成一个新的字符串,然后生成新区块加到区块链的末尾.</li>
 </ul>
-</li>
-</ol>
 <h1 id="对矿工的激励措施"><a href="#对矿工的激励措施" class="headerlink" title="对矿工的激励措施"></a>对矿工的激励措施</h1><ol>
 <li>比特别网络奖励</li>
 <li>交易费收入</li>
@@ -84,7 +131,7 @@
     
     <entry>
       <title><![CDATA[在markdown中引入图片的解决方案]]></title>
-      <url>/2018/01/20/%E5%8E%9F-markdown%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5/</url>
+      <url>/2018/01/20/20180119_markdown%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5/</url>
       <content type="html"><![CDATA[<p>（转载请注明作者和出处：<a href="https://yangningbocn.github.io">https://yangningbocn.github.io</a> 未经允许请勿用于商业用途）</p>
 <p>#背景</p>
 <ol>
@@ -131,7 +178,7 @@
     
     <entry>
       <title><![CDATA[hexo安装使用和优化]]></title>
-      <url>/2018/01/20/%E5%8E%9F-hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96/</url>
+      <url>/2018/01/20/20180202_hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96/</url>
       <content type="html"><![CDATA[<p>（转载请注明作者和出处：<a href="https://yangningbocn.github.io">https://yangningbocn.github.io</a> 未经允许请勿用于商业用途）<br>本文主要使用GitHub pages + hexo 来搭建个人博客，作日常学习使用。在这里只提主要步骤，不提具体过程，需要的话自行谷歌。</p>
 <hr>
 <p>安装与配置</p>
@@ -176,9 +223,9 @@ hexo migrate rss &lt;source&gt;
 </code></pre><h1 id="5-文章访问量统计"><a href="#5-文章访问量统计" class="headerlink" title="5.文章访问量统计"></a>5.文章访问量统计</h1><p>使用LeanCloud，评论也可以使用它，省心。<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">参考博客</a></p>
 <h1 id="6-local-research"><a href="#6-local-research" class="headerlink" title="6.local research"></a>6.local research</h1><p>本地搜索很好用。在主题配置文件中修改local research就好</p>
 <h1 id="7-RSS"><a href="#7-RSS" class="headerlink" title="7.RSS"></a>7.RSS</h1><p>使用 Hexo 生成的 Feed 链接。 你可以需要先安装 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> 插件。</p>
-<hr>
+<h1 id="8-阅读时长插件"><a href="#8-阅读时长插件" class="headerlink" title="8.阅读时长插件"></a>8.阅读时长插件</h1><pre><code>npm install  hexo-wordcount --save
+</code></pre><hr>
 <p>next官网 <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a></p>
-<h1 id="8-阅读时长插件"><a href="#8-阅读时长插件" class="headerlink" title="8.阅读时长插件"></a>8.阅读时长插件</h1><p>npm install  hexo-wordcount –save</p>
 ]]></content>
       
         <categories>
@@ -202,7 +249,7 @@ hexo migrate rss &lt;source&gt;
     
     <entry>
       <title><![CDATA[科学上网教学]]></title>
-      <url>/2018/01/20/%E5%8E%9F-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%95%99%E5%AD%A6/</url>
+      <url>/2018/01/18/20180120_%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%95%99%E5%AD%A6/</url>
       <content type="html"><![CDATA[<p>（转载请注明作者和出处：<a href="https://yangningbocn.github.io">https://yangningbocn.github.io</a> 未经允许请勿用于商业用途）<br>1.打开ishadow<br>ishadow的网址为(<a href="https://global.ishadowx.net/" target="_blank" rel="noopener">https://global.ishadowx.net/</a>)</p>
 <p>2.下拉并找到SS<br>下载ss到计算机，如果是手机下载相应的app</p>
 <p>3.解压缩<br>解压缩完了之后尽量不要放在桌面，放在一个文件夹中，因为它会产生一些配置文件，并放个快捷方式到桌面</p>
@@ -220,7 +267,7 @@ hexo migrate rss &lt;source&gt;
       
         <categories>
             
-            <category> IT </category>
+            <category> tools </category>
             
         </categories>
         
@@ -237,7 +284,7 @@ hexo migrate rss &lt;source&gt;
     
     <entry>
       <title><![CDATA[ssserver在vps服务器端自启动]]></title>
-      <url>/2018/01/16/%E5%8E%9F-ssserver%E5%9C%A8VPS%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E8%87%AA%E5%90%AF%E5%8A%A8/</url>
+      <url>/2018/01/16/20180116_ssserver%E5%9C%A8VPS%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E8%87%AA%E5%90%AF%E5%8A%A8/</url>
       <content type="html"><![CDATA[<p>（转载请注明作者和出处：<a href="https://yangningbocn.github.io">https://yangningbocn.github.io</a> 未经允许请勿用于商业用途）<br>系统环境:Ubuntu<br>操作要求：能够进行基本的linux操作</p>
 <hr>
 <p>说明：<br>nohup可以让你关闭终端之后，进程依旧在后台运行，如果用&amp;，终端关闭之后进程也随之关闭。就是这样。</p>
@@ -246,7 +293,7 @@ hexo migrate rss &lt;source&gt;
 <hr>
 <p>加密方式改为”chacha20-ietf”<br>优点：据说加密更牛逼，网速也牛逼。然后并没有发现哪里牛逼了，感觉也就手机快一点点吧，这可能就是玄学吧。不管怎么先把过程写出来吧。<br>shadowsocks版本不能太低，2.x.x的版本没有chacha20、chacha20-ietf等加密方式，所以要重新装，也要装chacha20的依赖库libsodium。</p>
 <p>这个时候要</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">1.升级pip</span><br><span class="line">pip install --upgrade pip</span><br><span class="line"></span><br><span class="line">2.升级安装工具</span><br><span class="line">pip install -U setuptools</span><br><span class="line"></span><br><span class="line">3.安装新的shadowsocks</span><br><span class="line">pip install git+https://github.com/shadowsocks/shadowsocks.git@master</span><br><span class="line"></span><br><span class="line">4.安装libsodium</span><br><span class="line">    apt-get install build-essential</span><br><span class="line">    wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz</span><br><span class="line">    tar zxf LATEST.tar.gz</span><br><span class="line">    cd libsodium*</span><br><span class="line">    ./configure</span><br><span class="line">    make &amp;&amp; make install</span><br><span class="line">    ldconfig</span><br><span class="line"></span><br><span class="line">5.修改配置文件</span><br><span class="line">sudo vim /etc/shadowsocks.json</span><br><span class="line">    把加密方式改为：chacha20-ietf</span><br><span class="line"></span><br><span class="line">5.</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">1.升级pip</span><br><span class="line">pip install --upgrade pip</span><br><span class="line"></span><br><span class="line">2.升级安装工具</span><br><span class="line">pip install -U setuptools</span><br><span class="line"></span><br><span class="line">3.安装新的shadowsocks</span><br><span class="line">pip install git+https://github.com/shadowsocks/shadowsocks.git@master</span><br><span class="line"></span><br><span class="line">4.安装libsodium</span><br><span class="line">    apt-get install build-essential</span><br><span class="line">    wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz</span><br><span class="line">    tar zxf LATEST.tar.gz</span><br><span class="line">    cd libsodium*</span><br><span class="line">    ./configure</span><br><span class="line">    make &amp;&amp; make install</span><br><span class="line">    ldconfig</span><br><span class="line"></span><br><span class="line">5.修改配置文件</span><br><span class="line">sudo vim /etc/shadowsocks.json</span><br><span class="line">    把加密方式改为：chacha20-ietf</span><br><span class="line"></span><br><span class="line">5.reboot</span><br></pre></td></tr></table></figure>]]></content>
       
         <categories>
             
