@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yangningbocn.github.io/2018/05/30/20180530_ROS%E7%94%A8python%E8%AF%BB%E5%86%99%E4%B8%B2%E5%8F%A3%E6%95%B0%E6%8D%AE/</loc>
+    
+    <lastmod>2018-05-30T01:37:17.933Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yangningbocn.github.io/2017/01/01/example/</loc>
+    
+    <lastmod>2018-05-30T01:36:56.402Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yangningbocn.github.io/2018/03/28/20180328_NUC%E7%9A%84Ubuntu%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    
+    <lastmod>2018-05-30T01:32:40.036Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yangningbocn.github.io/2018/01/16/20180116_ssserver%E5%9C%A8VPS%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E8%87%AA%E5%90%AF%E5%8A%A8/</loc>
     
-    <lastmod>2018-02-28T01:58:54.047Z</lastmod>
+    <lastmod>2018-03-30T07:29:26.289Z</lastmod>
     
   </url>
   
@@ -187,13 +208,6 @@
     <loc>https://yangningbocn.github.io/categories/index.html</loc>
     
     <lastmod>2018-01-16T13:17:53.745Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yangningbocn.github.io/2017/01/10/example/</loc>
-    
-    <lastmod>2018-01-16T12:54:29.549Z</lastmod>
     
   </url>
   
