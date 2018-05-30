@@ -44,30 +44,23 @@ sudo vim /etc/shadowsocks.json
     "fast_open":false
     }
     ：wq来保存退出
-
-4.写脚本文件
-sudo vim /root/shadowsocks.sh
-    内容如下：
-    #！/bin/bash
-    #shadowsocks.sh
-    ssserver -c /etc/shadowsocks.json
-5.开机自启动
+	
+4.开机自启动
 sudo vim /etc/rc.local
-    在exit之前输入
-    nohup bash /home/shadow.sh&
+    在exit 0之前输入
+    nohup ssserver -c /etc/shadowsocks.json
     保存退出
-6.reboot
+5.reboot
 
 ```
 
 
 ----------
 
-加密方式改为"chacha20-ietf"
+加密方式改为"chacha20-ietf-poly1305"
 优点：据说加密更牛逼，网速也牛逼。然后并没有发现哪里牛逼了，感觉也就手机快一点点吧，这可能就是玄学吧。不管怎么先把过程写出来吧。
 shadowsocks版本不能太低，2.x.x的版本没有chacha20、chacha20-ietf等加密方式，所以要重新装，也要装chacha20的依赖库libsodium。
 
-这个时候要
 
 ```
 1.升级pip
@@ -90,7 +83,14 @@ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 5.修改配置文件
 sudo vim /etc/shadowsocks.json
-    把加密方式改为：chacha20-ietf
+    把加密方式改为：chacha20-ietf-poly1305
 
 5.reboot
 ```
+
+遇到的问题:
+1. pip install shadowsocks时出现locale.Error: unsupported locale setting
+
+在终端输入 
+    export LC_ALL = C
+就是在locale中让LC_ALL 的值为C就ok了.
