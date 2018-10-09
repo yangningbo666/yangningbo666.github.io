@@ -85,7 +85,7 @@
 <meta name="keywords" content="ros, ubuntu, TensorFlow, gazebo, rviz, robot, reinforcement learning">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ningbo&#39;s blogs">
-<meta property="og:url" content="https://yangningbocn.github.io/tags/TensorFlow/index.html">
+<meta property="og:url" content="https://yangningbocn.github.io/tags/Tensorflow/index.html">
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="A coder who want to be a programmer.">
 <meta property="og:locale" content="zh-Hans">
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://yangningbocn.github.io/tags/TensorFlow/"/>
+  <link rel="canonical" href="https://yangningbocn.github.io/tags/Tensorflow/"/>
 
 
 
 
 
-  <title>标签: TensorFlow | Ningbo's blogs</title>
+  <title>标签: Tensorflow | Ningbo's blogs</title>
   
 
 
@@ -300,7 +300,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h2>TensorFlow<small>标签</small>
+        <h2>Tensorflow<small>标签</small>
         </h2>
       </div>
 
@@ -312,9 +312,9 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017/12/28/原-TensorFlow-in-nvidia-docker-failed-call-to-cuInit-CUDA-ERROR-UNKNOWN/" itemprop="url">
+            <a class="post-title-link" href="/2018/01/10/原-python连接gazebo-openAI的gym-erlerobot的gym-gazebo-google的tensorflow/" itemprop="url">
               
-                <span itemprop="name">TensorFlow in nvidia-docker: failed call to cuInit: CUDA_ERROR_UNKNOWN</span>
+                <span itemprop="name">python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</span>
               
             </a>
         
@@ -322,9 +322,65 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-28T20:28:01+08:00"
-              content="2017-12-28" >
-          12-28
+              datetime="2018-01-10T23:15:48+08:00"
+              content="2018-01-10" >
+          01-10
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h3 class="post-title">
+        
+            <a class="post-title-link" href="/2018/01/10/原-在sublime-text3和pycharm无法import-rospy等ros-Python库/" itemprop="url">
+              
+                <span itemprop="name">在sublime-text3和pycharm无法import-rospy等ros-Python库</span>
+              
+            </a>
+        
+      </h3>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-01-10T21:58:21+08:00"
+              content="2018-01-10" >
+          01-10
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h3 class="post-title">
+        
+            <a class="post-title-link" href="/2017/12/22/原-笔记本-GT-750M-Ubuntu14-04安装-CUDA8-0-cuDDN5-1-Tensorflow/" itemprop="url">
+              
+                <span itemprop="name">笔记本(GT 750M)Ubuntu14.04安装[CUDA8.0][cuDDN5.1][Tensorflow]</span>
+              
+            </a>
+        
+      </h3>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-12-22T10:39:02+08:00"
+              content="2017-12-22" >
+          12-22
         </time>
       </div>
 
@@ -384,7 +440,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -395,7 +451,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -406,7 +462,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">55</span>
+                  <span class="site-state-item-count">59</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1092,84 +1148,6 @@
               success: function(newcounter) {
                 var $element = $(document.getElementById(url));
                 $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
-
-  
-  
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
-
-  <script>
-    
-      pbOptions = {};
-      
-          pbOptions.iconStyle = "box";
-      
-          pbOptions.boxForm = "horizontal";
-      
-          pbOptions.position = "bottomCenter";
-      
-          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-postbottom', pbOptions);
-    
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "box";
-      
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
-    
-  </script>
-
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
-itors-count').text(newcounter.get('time'));
               },
               error: function(newcounter, error) {
                 console.log('Failed to create');
