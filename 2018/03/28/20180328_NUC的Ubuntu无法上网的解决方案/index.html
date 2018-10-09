@@ -85,11 +85,11 @@
 <meta name="keywords" content="NUC, Ubuntu, Network">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NUC的Ubuntu无法上网的解决方案">
-<meta property="og:url" content="https://yangningbocn.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/index.html">
+<meta property="og:url" content="https://yangningbo666.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/index.html">
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="NUC的Linux网卡驱动没有装好，解决NUC的Ubuntu无法上网的方案">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-09T07:53:53.805Z">
+<meta property="og:updated_time" content="2018-10-09T08:40:27.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NUC的Ubuntu无法上网的解决方案">
 <meta name="twitter:description" content="NUC的Linux网卡驱动没有装好，解决NUC的Ubuntu无法上网的方案">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="https://yangningbocn.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/"/>
+  <link rel="canonical" href="https://yangningbo666.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/"/>
 
 
 
@@ -308,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yangningbocn.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/">
+    <link itemprop="mainEntityOfPage" href="https://yangningbo666.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ningbo Yang">
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  253
+                  245
                 </span>
               
 
@@ -456,7 +456,7 @@
         <p>（转载请注明作者和出处：<a href="https://yangningbo666.github.io）" target="_blank" rel="noopener">https://yangningbo666.github.io）</a></p>
 <h1 id="查询网卡型号"><a href="#查询网卡型号" class="headerlink" title="查询网卡型号"></a>查询网卡型号</h1><pre><code>lspci
 </code></pre><p>Ethernet controller是有线网卡<br>Network controller是无线网卡</p>
-<p>#有线网卡具体步骤<br><a href="https://askubuntu.com/questions/755652/ethernet-not-working-on-ubuntu-14-04-lts" target="_blank" rel="noopener">参考这个回答</a></p>
+<h1 id="有线网卡具体步骤"><a href="#有线网卡具体步骤" class="headerlink" title="有线网卡具体步骤"></a>有线网卡具体步骤</h1><p><a href="https://askubuntu.com/questions/755652/ethernet-not-working-on-ubuntu-14-04-lts" target="_blank" rel="noopener">参考这个回答</a></p>
 <ol>
 <li>下载e1000e  <a href="https://downloadcenter.intel.com/download/15817" target="_blank" rel="noopener">下载地址</a></li>
 <li>把e1000e放到某个文件夹下，例如/home/hit/</li>
@@ -466,11 +466,15 @@
 <li>测试是否成功</li>
 </ol>
 <h1 id="无线网卡具体步骤"><a href="#无线网卡具体步骤" class="headerlink" title="无线网卡具体步骤"></a>无线网卡具体步骤</h1><p><a href="https://askubuntu.com/questions/858546/wifi-not-working-intel-on-hp-spectre-x360-13/859263#859263" target="_blank" rel="noopener">参考这个回答</a></p>
-<p>1.下载<br><a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb" target="_blank" rel="noopener">http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb</a><br><a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-image-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb" target="_blank" rel="noopener">http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-image-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb</a><br><a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814_4.8.14-040814.201612101431_all.deb" target="_blank" rel="noopener">http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814_4.8.14-040814.201612101431_all.deb</a> </p>
 <ol>
-<li>安装<br>sudo dpkg -i *.deb </li>
-<li>重启 好了</li>
-<li>没好的话<br><a href="https://blog.csdn.net/linzhineng44/article/details/78778143" target="_blank" rel="noopener">参考这个回答</a><br>可以通过链接<a href="https://wireless.wiki.kernel.org/en/users/Drivers/iwlwifi下载相应的驱动。解压缩之后把文件" target="_blank" rel="noopener">https://wireless.wiki.kernel.org/en/users/Drivers/iwlwifi下载相应的驱动。解压缩之后把文件</a></li>
+<li><p>下载<br><a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb" target="_blank" rel="noopener">http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb</a><br><a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-image-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb" target="_blank" rel="noopener">http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-image-4.8.14-040814-generic_4.8.14-040814.201612101431_amd64.deb</a><br><a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814_4.8.14-040814.201612101431_all.deb" target="_blank" rel="noopener">http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8.14/linux-headers-4.8.14-040814_4.8.14-040814.201612101431_all.deb</a> </p>
+</li>
+<li><p>安装<br>sudo dpkg -i *.deb </p>
+</li>
+<li><p>重启 好了</p>
+</li>
+<li><p>没好的话<br><a href="https://blog.csdn.net/linzhineng44/article/details/78778143" target="_blank" rel="noopener">参考这个回答</a><br>可以通过链接<a href="https://wireless.wiki.kernel.org/en/users/Drivers/iwlwifi下载相应的驱动。" target="_blank" rel="noopener">https://wireless.wiki.kernel.org/en/users/Drivers/iwlwifi下载相应的驱动。</a></p>
+</li>
 </ol>
 
       
@@ -550,8 +554,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/02/原-安装固态硬盘后Windows及Ubuntu的安装/" rel="next" title="小谈安装固态硬盘后Windows及Ubuntu的安装">
-                <i class="fa fa-chevron-left"></i> 小谈安装固态硬盘后Windows及Ubuntu的安装
+              <a href="/2018/02/02/原-安装固态硬盘后Windows及Ubuntu的安装/" rel="next" title="安装固态硬盘后Windows及Ubuntu的安装">
+                <i class="fa fa-chevron-left"></i> 安装固态硬盘后Windows及Ubuntu的安装
               </a>
             
           </div>
@@ -594,7 +598,7 @@
   
     <div class="comments" id="comments">
       <div class="ds-thread" data-thread-key="2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/"
-           data-title="NUC的Ubuntu无法上网的解决方案" data-url="https://yangningbocn.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/">
+           data-title="NUC的Ubuntu无法上网的解决方案" data-url="https://yangningbo666.github.io/2018/03/28/20180328_NUC的Ubuntu无法上网的解决方案/">
       </div>
     </div>
 
@@ -646,7 +650,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -682,7 +686,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/yangningbocn" target="_blank" title="GitHub">
+                    <a href="https://github.com/yangningbo666" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -723,7 +727,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#查询网卡型号"><span class="nav-number">1.</span> <span class="nav-text">查询网卡型号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#无线网卡具体步骤"><span class="nav-number">2.</span> <span class="nav-text">无线网卡具体步骤</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#查询网卡型号"><span class="nav-number">1.</span> <span class="nav-text">查询网卡型号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有线网卡具体步骤"><span class="nav-number">2.</span> <span class="nav-text">有线网卡具体步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#无线网卡具体步骤"><span class="nav-number">3.</span> <span class="nav-text">无线网卡具体步骤</span></a></li></ol></div>
             
 
           </div>

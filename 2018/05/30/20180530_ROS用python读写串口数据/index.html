@@ -85,11 +85,11 @@
 <meta name="keywords" content="ROS, python, serial, struct">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ROS用python读写串口数据">
-<meta property="og:url" content="https://yangningbocn.github.io/2018/05/30/20180530_ROS用python读写串口数据/index.html">
+<meta property="og:url" content="https://yangningbo666.github.io/2018/05/30/20180530_ROS用python读写串口数据/index.html">
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="在ROS环境下，使用python读取串口数据，控制小车，并读取传感器数据并解析。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-09T07:54:19.581Z">
+<meta property="og:updated_time" content="2018-10-09T08:39:30.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ROS用python读写串口数据">
 <meta name="twitter:description" content="在ROS环境下，使用python读取串口数据，控制小车，并读取传感器数据并解析。">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="https://yangningbocn.github.io/2018/05/30/20180530_ROS用python读写串口数据/"/>
+  <link rel="canonical" href="https://yangningbo666.github.io/2018/05/30/20180530_ROS用python读写串口数据/"/>
 
 
 
@@ -308,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yangningbocn.github.io/2018/05/30/20180530_ROS用python读写串口数据/">
+    <link itemprop="mainEntityOfPage" href="https://yangningbo666.github.io/2018/05/30/20180530_ROS用python读写串口数据/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ningbo Yang">
@@ -454,8 +454,7 @@
 
       
         <p>（转载请注明作者和出处：<a href="https://yangningbo666.github.io）" target="_blank" rel="noopener">https://yangningbo666.github.io）</a></p>
-<p>##程序：</p>
-<pre><code>import serial
+<h2 id="程序："><a href="#程序：" class="headerlink" title="程序："></a>程序：</h2><pre><code>import serial
 import struct
 
 ser = serial.Serial(&apos;/dev/ttyUSB0&apos;,&apos;115200&apos;)
@@ -469,20 +468,15 @@ ser.write(data)
 data = &apos;&apos;
 data_temp = ser.read(4)
 data = struct.unpack(&apos;&gt;BHB&apos;, data_temp)
-</code></pre><p>##流程：</p>
-<p>###首先在Ubuntu下安装pyserial</p>
-<pre><code>pip install serial
-</code></pre><p>###查看串口名称，并给予权限</p>
-<pre><code>demsg | grep ttyUSB
+</code></pre><h2 id="流程："><a href="#流程：" class="headerlink" title="流程："></a>流程：</h2><h3 id="首先在Ubuntu下安装pyserial"><a href="#首先在Ubuntu下安装pyserial" class="headerlink" title="首先在Ubuntu下安装pyserial"></a>首先在Ubuntu下安装pyserial</h3><pre><code>pip install serial
+</code></pre><h3 id="查看串口名称，并给予权限"><a href="#查看串口名称，并给予权限" class="headerlink" title="查看串口名称，并给予权限"></a>查看串口名称，并给予权限</h3><pre><code>demsg | grep ttyUSB
 sudo chmod a+x ttyUSBn(n为你看到的数)
-</code></pre><p>###进行读写实验</p>
-<ol>
+</code></pre><h3 id="进行读写实验"><a href="#进行读写实验" class="headerlink" title="进行读写实验"></a>进行读写实验</h3><ol>
 <li>在读写使用中用struct中的pack对数据进行转换再发送到串口，才能被STM32正常识别。同时，再读取时进行读取也能读出正常格式的数据。<br>其中B代表无符号的字节占一位，H占两位。</li>
 <li>读取数据时，单片机发送多少位，读取多少位，可以完整的读取数据。</li>
 </ol>
-<p>##读与写的内容</p>
-<p>###读<br>读出来的是16位byte类型的数据，先unpack之后，然后处理，前6位分别对应roll pitch yaw，第7、8位对应angular_z，第9到16位读出来是<br>每个轮的转速。奇数位是方向位，偶数位是速度位。</p>
-<p>###写<br>先把255 254 mode v_x v_y a_z flag(方向标志位)按照BBBHHHB的顺序pack，然后再写到串口</p>
+<h2 id="读与写的内容"><a href="#读与写的内容" class="headerlink" title="读与写的内容"></a>读与写的内容</h2><h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>读出来的是16位byte类型的数据，先unpack之后，然后处理，前6位分别对应roll pitch yaw，第7、8位对应angular_z，第9到16位读出来是<br>每个轮的转速。奇数位是方向位，偶数位是速度位。</p>
+<h3 id="写"><a href="#写" class="headerlink" title="写"></a>写</h3><p>先把255 254 mode v_x v_y a_z flag(方向标志位)按照BBBHHHB的顺序pack，然后再写到串口</p>
 
       
     </div>
@@ -607,7 +601,7 @@ sudo chmod a+x ttyUSBn(n为你看到的数)
   
     <div class="comments" id="comments">
       <div class="ds-thread" data-thread-key="2018/05/30/20180530_ROS用python读写串口数据/"
-           data-title="ROS用python读写串口数据" data-url="https://yangningbocn.github.io/2018/05/30/20180530_ROS用python读写串口数据/">
+           data-title="ROS用python读写串口数据" data-url="https://yangningbo666.github.io/2018/05/30/20180530_ROS用python读写串口数据/">
       </div>
     </div>
 
@@ -634,8 +628,17 @@ sudo chmod a+x ttyUSBn(n为你看到的数)
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -650,7 +653,7 @@ sudo chmod a+x ttyUSBn(n为你看到的数)
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -686,7 +689,7 @@ sudo chmod a+x ttyUSBn(n为你看到的数)
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/yangningbocn" target="_blank" title="GitHub">
+                    <a href="https://github.com/yangningbo666" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -717,6 +720,22 @@ sudo chmod a+x ttyUSBn(n为你看到的数)
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#程序："><span class="nav-number">1.</span> <span class="nav-text">程序：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流程："><span class="nav-number">2.</span> <span class="nav-text">流程：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#首先在Ubuntu下安装pyserial"><span class="nav-number">2.1.</span> <span class="nav-text">首先在Ubuntu下安装pyserial</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看串口名称，并给予权限"><span class="nav-number">2.2.</span> <span class="nav-text">查看串口名称，并给予权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进行读写实验"><span class="nav-number">2.3.</span> <span class="nav-text">进行读写实验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#读与写的内容"><span class="nav-number">3.</span> <span class="nav-text">读与写的内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#读"><span class="nav-number">3.1.</span> <span class="nav-text">读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写"><span class="nav-number">3.2.</span> <span class="nav-text">写</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
