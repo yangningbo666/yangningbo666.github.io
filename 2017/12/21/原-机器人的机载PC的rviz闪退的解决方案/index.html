@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="在机器人上装上了一个miniPC，在上面装上了ros indigo版本，使用远程桌面连接miniPC，然后操作机器人进行建图实验，出现闪退，并提出解决方案。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-22T14:41:16.595Z">
+<meta property="og:updated_time" content="2018-05-30T02:22:24.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rviz闪退的解决方案">
 <meta name="twitter:description" content="在机器人上装上了一个miniPC，在上面装上了ros indigo版本，使用远程桌面连接miniPC，然后操作机器人进行建图实验，出现闪退，并提出解决方案。">
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  183
+                  232
                 </span>
               
 
@@ -460,9 +460,16 @@
 <p>原因：这是由于rviz在不接显示器的时候，是不能启动的</p>
 <hr>
 <p>解决方法： </p>
-<p>1.使用zeroconf，通过ssh连接miniPC，进行控制，在自己的电脑上打开rviz，就能订阅miniPC上的topic </p>
-<p>2.先插上显示器，打开rviz后，然后拔掉VGA或者HDMI.(这个方法是别人告诉我的不知道可不可行)</p>
-
+<ol>
+<li><p>使用zeroconf，通过ssh连接miniPC，进行控制，在自己的电脑上打开rviz，就能订阅miniPC上的topic </p>
+</li>
+<li><p>先插上显示器，打开rviz后，然后拔掉VGA或者HDMI.(这个方法是别人告诉我的不知道可不可行)</p>
+</li>
+<li><p>Rendering on a server</p>
+</li>
+</ol>
+<p>If you’re trying to render video on a server, you’ll need to connect a fake display. The easiest way to do this is by running under xvfb-run (on Ubuntu, install the xvfb package):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xvfb-run -s &quot;-screen 0 1400x900x24&quot; bash</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -627,7 +634,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
