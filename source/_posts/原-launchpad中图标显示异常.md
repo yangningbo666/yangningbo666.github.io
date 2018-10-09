@@ -1,5 +1,5 @@
 ---
-title: launchpad中图标显示异常
+title: Ubuntu中launchpad中图标显示异常
 categories: tools 
 tags:
     - launchpad
@@ -10,7 +10,7 @@ keywords: luanchpad, 图标异常, icon error, Ubuntu
 description: 在launchpad中图标异常，之后修复图标到正常情况
 date: 2017-12-28 10:08:16
 ---
-（转载请注明作者和出处：https://yangningbocn.github.io 未经允许请勿用于商业用途）
+（转载请注明作者和出处：https://yangningbo666.github.io）
 
 系统:　Ubuntu14.04
 
@@ -44,4 +44,4 @@ sudo vim *.desktop
 
 把Icon后面的路径改为你的图片的路径
 
-sudo reboo
+sudo reboot

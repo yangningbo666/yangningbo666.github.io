@@ -14,7 +14,7 @@ keywords: ubuntu, ros, gym, gazebo, Tensorflow，gym-gazebo
 description: python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow
 date: 2018-01-10 23:15:48
 ---
-（转载请注明作者和出处：https://yangningbocn.github.io 未经允许请勿用于商业用途）
+（转载请注明作者和出处：https://yangningbo666.github.io）
 笔记本型号：联想Y500 
 CPU　:　Intel® Core™ i7-3630QM CPU @ 2.40GHz × 8 
 内存：7.7 GiB 
@@ -73,13 +73,14 @@ xvfb-run -s "-screen 0 1400x900x24" bash
 参照此人的博客：[理解gym-gazebo](http://blog.csdn.net/zhangdadadawei/article/details/78956156)
 注意：
     1.安装过程中可以打开gazebo.repos把系统中已经有的可以屏蔽掉。
-    2.如果CPU性能不是特别好，不建议那么多线程，make -j 1就好，慢点就慢点吧，然后会编译冲突错误。
+    2.如果CPU性能不是特别好，不建议那么多线程，make -j 1就好，慢点就慢点吧，不然会编译冲突错误。
     3.路径的设置要根据自己安装的路径来。
 ##6.tensorflow
 因为ros不兼容python3，所以我只能把原来的Python3的tensorflow废弃掉了。
 我编译安装tensorflow没成功，这里，我用pip安装的。
 安装过程中，不知道是网还是我的电脑的问题很多包在pip的时候会下载不下来，导致安装失败，我的应对方法是：从python官网把需要安装的whl包最新版下载下来用pip安装。
-pip安装whl的方法如下：
+
+##pip安装whl的方法如下：
 1.cd到whl包所在的目录
 2.pip install xxxx.whl（也可以加sudo）
 
