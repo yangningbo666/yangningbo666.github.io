@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Ningbo&#39;s blogs">
 <meta property="og:description" content="ubuntu上我的装机必备小工具">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-09T08:38:37.141Z">
+<meta property="og:updated_time" content="2018-11-25T08:08:21.588Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu上装机必备小工具">
 <meta name="twitter:description" content="ubuntu上我的装机必备小工具">
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  130
+                  237
                 </span>
               
 
@@ -454,15 +454,39 @@
 
       
         <p>（转载请注明作者和出处：<a href="https://yangningbo666.github.io）" target="_blank" rel="noopener">https://yangningbo666.github.io）</a></p>
-<p>1.system monitor indicator</p>
+<ol>
+<li>system monitor indicator</li>
+</ol>
 <p>系统监视软件</p>
-<p>sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor<br>sudo apt-get update<br>sudo apt-get install indicator-sysmonitor<br>indicator-sysmonitor &amp;</p>
-<p>2.touchpad-indicator<br>一个触摸板禁用软件，插入鼠标自动禁用touchpad</p>
-<p>3.y-ppa-manager<br>一个可以管理ppa的软件，可以清理修复ppa</p>
-<p>4.Terminator</p>
+<pre><code>sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+sudo apt-get update
+sudo apt-get install indicator-sysmonitor
+indicator-sysmonitor &amp;
+</code></pre><ol>
+<li><p>touchpad-indicator<br>一个触摸板禁用软件，插入鼠标自动禁用touchpad</p>
+<p> sudo add-apt-repository ppa:atareao/atareao<br> sudo apt-get update<br> sudo apt-get install -y touchpad-indicator</p>
+</li>
+<li><p>y-ppa-manager<br>一个可以管理ppa的软件，可以清理修复ppa</p>
+<p> sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y<br> sudo apt-get update<br> sudo apt-get install y-ppa-manager -y</p>
+</li>
+<li><p>Terminator</p>
+</li>
+</ol>
 <p>一个好用的可以把一个终端分成多个终端的软件</p>
-<p>5.新立得</p>
+<ol>
+<li>新立得</li>
+</ol>
 <p>这是一个Ubuntu软件包管理软件，谁用谁知道。</p>
+<pre><code>sudo apt install synaptic
+</code></pre><p>如果搜索框丢失，可以通过安装组件解决</p>
+<pre><code>aptitude install apt-xapian-index
+</code></pre><ol>
+<li><p>小飞机图形界面版</p>
+<p> sudo add-apt-repository ppa:hzwhuang/ss-qt5<br> sudo apt-get update<br> sudo apt-get install shadowsocks-qt5</p>
+<p> 或者<br> <a href="https://github.com/shadowsocks/shadowsocks-qt5/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-qt5/releases</a></p>
+<p> file:///home/{user}/autoproxy.pac</p>
+</li>
+</ol>
 
       
     </div>
@@ -639,7 +663,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -650,7 +674,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">59</span>
+                  <span class="site-state-item-count">60</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

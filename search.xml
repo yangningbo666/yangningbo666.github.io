@@ -108,11 +108,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2018%2F01%2F19%2F%E5%8E%9F-%E6%89%8B%E6%8C%81%E9%95%AD%E7%A5%9ELS01C%E4%BD%BF%E7%94%A8hector-mapping%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E5%BB%BA%E5%9B%BE%E5%AE%9E%E9%AA%8C%2F</url>
-    <content type="text"><![CDATA[title: SLAM with LS01C and hectorcategories: ROStags: - robot - SLAM - ROS - hector comments: truekeywords: ROS, gazebo, robot, hector, 镭神ls01cdescription: 手持镭神LS01C使用hector_mapping方法进行建图实验 date: 2017-12-04 11:23:05（转载请注明作者和出处：https://yangningbo666.github.io）我的代码在ls01c可以拿去下载。 本博客只是个人学习记录使用，瞎写写，内容比较粗糙。 从镭神客服那里拿到驱动 对驱动进行阅读，并启动节点获取雷达数据实验在启动激光雷达的过程中可能遇到这样的问题：驱动没问题，launch文件也没问题，但是雷达不旋转，也得不到数据，这是因为激光雷达的端口ttyUSB0(也可能是别的名称，自己查一下吧)没有权限，需要在终端执行以下语句： cd /devsudo chmod 777 ttyUSB 下载hector源码并编译hector的github下载地址 启动launch文件就可以建图了 可能遇到的问题： 手持时，可能因为移动的太快或者转动太快导致地图混乱 当有物体靠近激光雷达或者雷达收到振动时，终端会出现SearchDir angle change too large 后记：建图混乱的原因致使因为这个雷达的性能不满足这个算法。我回头试试用cartographer和这个雷达试试能否建出好图。]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[ssserver在vps服务器端自启动]]></title>
     <url>%2F2018%2F01%2F16%2F20180116_ssserver%E5%9C%A8VPS%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E8%87%AA%E5%90%AF%E5%8A%A8%2F</url>
     <content type="text"><![CDATA[（转载请注明作者和出处：https://yangningbo666.github.io ）系统环境:Ubuntu操作要求：能够进行基本的linux操作 说明：nohup可以让你关闭终端之后，进程依旧在后台运行，如果用&amp;，终端关闭之后进程也随之关闭。就是这样。 ##命令： 1234567891011121314151617181920212223242526271.安装pip apt-get install python-pip 2.安装shadowsocks pip install shadowsocks3. 添加配置文件sudo vim /etc/shadowsocks.json 内容如下： &#123; &quot;server&quot;:&quot;服务器的ip&quot;, &quot;server_port&quot;:19175, &quot;local_address&quot;:&quot;127.0.0.1&quot;, &quot;local_port&quot;:1080, &quot;password&quot;:&quot;密码&quot;, &quot;timeout&quot;:300, &quot;method&quot;:&quot;aes-256-cfb&quot;, &quot;fast_open&quot;:false &#125; ：wq来保存退出 4.开机自启动sudo vim /etc/rc.local 在exit 0之前输入 nohup ssserver -c /etc/shadowsocks.json 保存退出5.reboot 加密方式改为”chacha20-ietf-poly1305”优点：据说加密更牛逼，网速也牛逼。然后并没有发现哪里牛逼了，感觉也就手机快一点点吧，这可能就是玄学吧。不管怎么先把过程写出来吧。shadowsocks版本不能太低，2.x.x的版本没有chacha20、chacha20-ietf等加密方式，所以要重新装，也要装chacha20的依赖库libsodium。 12345678910111213141516171819202122231.升级pippip install --upgrade pip2.升级安装工具pip install -U setuptools3.安装新的shadowsockspip install git+https://github.com/shadowsocks/shadowsocks.git@master4.安装libsodium apt-get install build-essential wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz tar zxf LATEST.tar.gz cd libsodium* ./configure make &amp;&amp; make install ldconfig5.修改配置文件sudo vim /etc/shadowsocks.json 把加密方式改为：chacha20-ietf-poly13055.reboot 遇到的问题: pip install shadowsocks时出现locale.Error: unsupported locale setting 在终端输入 export LC_ALL = C就是在locale中让LC_ALL 的值为C就ok了.]]></content>
@@ -134,9 +129,9 @@
         <category>reinforcement learning</category>
       </categories>
       <tags>
+        <tag>ubuntu</tag>
         <tag>ROS</tag>
         <tag>python</tag>
-        <tag>ubuntu</tag>
         <tag>gazebo</tag>
         <tag>gym</tag>
         <tag>Tensorflow</tag>
@@ -145,7 +140,7 @@
   <entry>
     <title><![CDATA[Ubuntu上装机必备小工具]]></title>
     <url>%2F2018%2F01%2F10%2F%E5%8E%9F-ubuntu%E4%B8%8A%E6%88%91%E7%9A%84%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87%E5%B0%8F%E5%B7%A5%E5%85%B7%2F</url>
-    <content type="text"><![CDATA[（转载请注明作者和出处：https://yangningbo666.github.io） 1.system monitor indicator 系统监视软件 sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitorsudo apt-get updatesudo apt-get install indicator-sysmonitorindicator-sysmonitor &amp; 2.touchpad-indicator一个触摸板禁用软件，插入鼠标自动禁用touchpad 3.y-ppa-manager一个可以管理ppa的软件，可以清理修复ppa 4.Terminator 一个好用的可以把一个终端分成多个终端的软件 5.新立得 这是一个Ubuntu软件包管理软件，谁用谁知道。]]></content>
+    <content type="text"><![CDATA[（转载请注明作者和出处：https://yangningbo666.github.io） system monitor indicator 系统监视软件 sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor sudo apt-get update sudo apt-get install indicator-sysmonitor indicator-sysmonitor &amp; touchpad-indicator一个触摸板禁用软件，插入鼠标自动禁用touchpad sudo add-apt-repository ppa:atareao/atareao sudo apt-get update sudo apt-get install -y touchpad-indicator y-ppa-manager一个可以管理ppa的软件，可以清理修复ppa sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y sudo apt-get update sudo apt-get install y-ppa-manager -y Terminator 一个好用的可以把一个终端分成多个终端的软件 新立得 这是一个Ubuntu软件包管理软件，谁用谁知道。 sudo apt install synaptic 如果搜索框丢失，可以通过安装组件解决 aptitude install apt-xapian-index 小飞机图形界面版 sudo add-apt-repository ppa:hzwhuang/ss-qt5 sudo apt-get update sudo apt-get install shadowsocks-qt5 或者 https://github.com/shadowsocks/shadowsocks-qt5/releases file:///home/{user}/autoproxy.pac]]></content>
       <categories>
         <category>tools</category>
       </categories>
@@ -163,9 +158,9 @@
         <category>tools</category>
       </categories>
       <tags>
+        <tag>ubuntu</tag>
         <tag>ROS</tag>
         <tag>python</tag>
-        <tag>ubuntu</tag>
         <tag>gazebo</tag>
         <tag>gym</tag>
         <tag>Tensorflow</tag>
@@ -233,8 +228,8 @@
       </categories>
       <tags>
         <tag>ROS</tag>
-        <tag>rviz</tag>
         <tag>robot</tag>
+        <tag>rviz</tag>
       </tags>
   </entry>
   <entry>
@@ -248,6 +243,20 @@
         <tag>ubuntu</tag>
         <tag>sublime-text3</tag>
         <tag>setting</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SLAM with LS01C and hector]]></title>
+    <url>%2F2017%2F12%2F04%2F%E5%8E%9F-%E6%89%8B%E6%8C%81%E9%95%AD%E7%A5%9ELS01C%E4%BD%BF%E7%94%A8hector-mapping%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E5%BB%BA%E5%9B%BE%E5%AE%9E%E9%AA%8C%2F</url>
+    <content type="text"><![CDATA[（转载请注明作者和出处：https://yangningbo666.github.io） 我的代码在ls01c可以拿去下载。 本博客只是个人学习记录使用，瞎写写，内容比较粗糙。 从镭神客服那里拿到驱动 对驱动进行阅读，并启动节点获取雷达数据实验 在启动激光雷达的过程中可能遇到这样的问题：驱动没问题，launch文件也没问题，但是雷达不旋转，也得不到数据，这是因为激光雷达的端口ttyUSB0(也可能是别的名称，自己查一下吧)没有权限，需要在终端执行以下语句： cd /devsudo chmod 777 ttyUSB 下载hector源码并编译 hector的github下载地址 启动launch文件就可以建图了 可能遇到的问题： 手持时，可能因为移动的太快或者转动太快导致地图混乱 当有物体靠近激光雷达或者雷达收到振动时，终端会出现SearchDir angle change too large 后记：建图混乱的原因致使因为这个雷达的性能不满足这个算法。我回头试试用cartographer和这个雷达试试能否建出好图。]]></content>
+      <categories>
+        <category>ROS</category>
+      </categories>
+      <tags>
+        <tag>ROS</tag>
+        <tag>robot</tag>
+        <tag>SLAM</tag>
+        <tag>hector</tag>
       </tags>
   </entry>
   <entry>

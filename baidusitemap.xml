@@ -4,6 +4,56 @@
 
     
   <url>
+    <loc>https://yangningbo666.github.io/2018/01/10/%E5%8E%9F-ubuntu%E4%B8%8A%E6%88%91%E7%9A%84%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2018-11-25T08:08:21.588Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu上装机必备小工具</title>
+        <pubTime>2018-01-10T14:12:51.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>tools</tag>
+         
+        <tag>software</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="https://yangningbo666.github.io/categories/tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yangningbo666.github.io/2017/12/04/%E5%8E%9F-%E6%89%8B%E6%8C%81%E9%95%AD%E7%A5%9ELS01C%E4%BD%BF%E7%94%A8hector-mapping%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E5%BB%BA%E5%9B%BE%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2018-11-25T07:40:11.376Z</lastmod>
+    <data>
+        <display>
+        <title>SLAM with LS01C and hector</title>
+        <pubTime>2017-12-04T03:23:05.000Z</pubTime>
+        
+        <tag>ROS</tag>
+         
+        <tag>robot</tag>
+         
+        <tag>SLAM</tag>
+         
+        <tag>hector</tag>
+         
+         
+           
+             
+              <breadCrumb title="ROS" url="https://yangningbo666.github.io/categories/ROS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://yangningbo666.github.io/2018/01/20/20180202_hexo%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E5%92%8C%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2018-10-09T08:40:59.398Z</lastmod>
     <data>
@@ -90,30 +140,6 @@
         <tag>sublime-text3</tag>
          
         <tag>setting</tag>
-         
-         
-           
-             
-              <breadCrumb title="tools" url="https://yangningbo666.github.io/categories/tools/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbo666.github.io/2018/01/10/%E5%8E%9F-ubuntu%E4%B8%8A%E6%88%91%E7%9A%84%E8%A3%85%E6%9C%BA%E5%BF%85%E5%A4%87%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2018-10-09T08:38:37.141Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu上装机必备小工具</title>
-        <pubTime>2018-01-10T14:12:51.000Z</pubTime>
-        
-        <tag>ubuntu</tag>
-         
-        <tag>tools</tag>
-         
-        <tag>software</tag>
          
          
            
@@ -305,11 +331,11 @@
         <title>python连接gazebo/openAI的gym/erlerobot的gym-gazebo/google的tensorflow</title>
         <pubTime>2018-01-10T15:15:48.000Z</pubTime>
         
+        <tag>ubuntu</tag>
+         
         <tag>ROS</tag>
          
         <tag>python</tag>
-         
-        <tag>ubuntu</tag>
          
         <tag>gazebo</tag>
          
@@ -411,30 +437,15 @@
         
         <tag>ROS</tag>
          
-        <tag>rviz</tag>
-         
         <tag>robot</tag>
+         
+        <tag>rviz</tag>
          
          
            
              
               <breadCrumb title="ROS" url="https://yangningbo666.github.io/categories/ROS/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yangningbo666.github.io/2018/01/19/%E5%8E%9F-%E6%89%8B%E6%8C%81%E9%95%AD%E7%A5%9ELS01C%E4%BD%BF%E7%94%A8hector-mapping%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E5%BB%BA%E5%9B%BE%E5%AE%9E%E9%AA%8C/</loc>
-    <lastmod>2018-10-09T08:24:56.001Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2018-01-19T03:23:45.690Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -448,11 +459,11 @@
         <title>在sublime-text3和pycharm无法import-rospy等ros-Python库</title>
         <pubTime>2018-01-10T13:58:21.000Z</pubTime>
         
+        <tag>ubuntu</tag>
+         
         <tag>ROS</tag>
          
         <tag>python</tag>
-         
-        <tag>ubuntu</tag>
          
         <tag>gazebo</tag>
          
